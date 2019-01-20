@@ -12,18 +12,17 @@ github_repo: "https://github.com/cbxs123/cbxs123.github.io.git" # you code repos
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/about-YS-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
-zhihu_username:     qiubaiying
-github_username:    qiubaiying
-facebook_username:  baiying.qiu.7
-jianshu_username:   e71990ada2fd
-#twitter_username:   qiubaiying
+weibo_username:     3865698335
+zhihu_username:     cbxs
+github_username:    cbxs123
+jianshu_username:   bd9e188a435c
+twitter_username:   saiyuan11
 
 
 
@@ -57,16 +56,16 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
+# disqus_username: YS
 
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: qiubaiying.github.io    #仓库名称
-  owner: qiubaiying    #github用户名
-  admin: qiubaiying
+  clientID: 6f043c6e830e7ffc90bf                            #生成的clientID
+  clientSecret: 95521b3cddba56a5f2ba8a20a51554d49448fdd2    #生成的clientSecret
+  repo: cbxs123.github.io    #仓库名称
+  owner: cbxs123    #github用户名
+  admin: cbxs123
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
@@ -74,11 +73,11 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: b50bf2b12b5338a1845e33832976fd68
+ba_track_id: b4e66aaf344ef2fe6e060ba6fb287128
 
 # Google Analytics
-ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_track_id: 'UA-132849275-1'            # Format: UA-xxxxxx-xx
+ga_domain: ysai.work               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
@@ -99,8 +98,8 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "LHN",
+        href: "https://github.com/haonanli"
     },{
         title: "简书·BY",
         href: "http://www.jianshu.com/u/e71990ada2fd"
