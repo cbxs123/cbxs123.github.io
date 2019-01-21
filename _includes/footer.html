@@ -109,6 +109,7 @@
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
 <script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
 <!-- Custom Theme JavaScript -->
@@ -116,17 +117,9 @@
 
 <!-- Service Worker -->
 {% if site.service-worker %}
-<script type="text/javascript">
-    if(navigator.serviceWorker){
-        // For security reasons, a service worker can only control the pages that are in the same directory level or below it. That's why we put sw.js at ROOT level.
-        navigator.serviceWorker
-            .register('/sw.js')
-            .then((registration) => {console.log('Service Worker Registered. ', registration)})
-            .catch((error) => {console.log('ServiceWorker registration failed: ', error)})
-    }
-</script>
+<script src="{{ "/js/snackbar.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/sw-registration.js " | prepend: site.baseurl }}"></script>
 {% endif %}
-
 
 <!-- async load function -->
 <script>
@@ -140,15 +133,15 @@
     }
 </script>
 
-<!-- 
-     Because of the native support for backtick-style fenced code blocks 
-     right within the Markdown is landed in Github Pages, 
-     From V1.6, There is no need for Highlight.js, 
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
      so Huxblog drops it officially.
 
-     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
-     - https://help.github.com/articles/creating-and-highlighting-code-blocks/ 
-     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers   
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
 -->
 <!--
     <script>
@@ -160,19 +153,20 @@
 -->
 
 
+
+{% if page.title == 'Tags' %}
 <!-- jquery.tagcloud.js -->
 <script>
-    // only load tagcloud.js in tag.html
-    if($('#tag_cloud').length !== 0){
-        async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
-            $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
+    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
+        $.fn.tagcloud.defaults = {
+            //size: {start: 1, end: 1, unit: 'em'},
+            color: {start: '#bbbbee', end: '#0085a1'},
+        };
+        $('#tag_cloud a').tagcloud();
+    })
 </script>
+<script src='{{ "/js/tags.js " | prepend: site.baseurl }}'></script>
+{% endif %}
 
 <!--fastClick.js -->
 <script>
@@ -218,7 +212,6 @@
     })();
 </script>
 {% endif %}
-
 
 
 <!-- Side Catalog -->
@@ -267,4 +260,5 @@
     });
 </script>
 {% endif %}
+
 

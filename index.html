@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "Thinking will not overcome fear but action will."
+description: "What did I do? What did I change?"
 ---
 
 {% for post in paginator.posts %}
@@ -15,7 +15,11 @@ description: "Thinking will not overcome fear but action will."
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
         </div>
     </a>
     <p class="post-meta">
