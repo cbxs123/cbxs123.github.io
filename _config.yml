@@ -1,10 +1,10 @@
 # Site settings
-title: YS Work
+title: Ysai Work
 SEOTitle: 厂白小赛的博客
 header-img: img/post-bg-desk.jpg
 email: 2214754995@qq.com
 description: "Every failure is leading towards success."
-keyword: "YS, YS Blog, 厂白小赛的博客, cbxs, 原赛, iOS, Apple, iPhone"
+keyword: "Ysai, Ysai Blog, 厂白小赛的博客, cbxs"
 url: "http://cbxs123.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/cbxs123/cbxs123.github.io" # you code repository
