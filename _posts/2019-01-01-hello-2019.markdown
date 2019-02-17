@@ -1,0 +1,70 @@
+---
+layout:     post
+title:      "Hello 2019"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2019-01-01 21:00:00
+author:     "Ysai"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - Blog
+---
+
+> “Yeah It's on. ”
+
+## 前言
+
+Ysai的 Blog 就这么开通了。
+
+[跳过废话，直接看技术实现 ](#build) 
+
+2019年，Ysai总算有个地方可以好好写点东西了。
+
+
+作为一个菜鸟程序员，记录学习到的新知识是必要的。[有道云笔记](https://note.youdao.com/web)是个不错的私人选择，支持网页及各种终端操作；[知乎](https://www.zhihu.com/)和[简书](https://www.jianshu.com/)则属于社交类博客网站。然而这些平台的交互性和易读性均有所欠缺。
+
+在比较了[GitHub](https://github.com/)上大神的个人博客后，感觉有几个还不错：[huxpro](huxpro.github.io)、[qiubaiying](qiubaiying.github.io)、[yansu](suyan.github.io)、[gaohaoyang](gaohaoyang.github.io)、[mzlogin](mzlogin.github.io)、[yingchi](http://yingchi.io/)、[yihui](https://yihui.name/)、[chaosky](http://chaosky.me/)、[linuxeye](https://blog.linuxeye.cn/)...
+
+
+<p id = "build"></p>
+---
+
+## 正文
+
+接下来说说搭建这个博客的技术细节。  
+
+正好之前就有关注过 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 快速 Building Blog 的技术方案，非常轻松时尚。
+
+其优点非常明显：
+
+* **Markdown** 带来的优雅写作体验
+* 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
+* 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
+	* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了 
+* Jekyll 的自定制非常容易，基本就是个模版引擎
+
+---
+
+配置的过程中也没遇到什么坑，基本就是 Git 的流程，相当顺手
+
+大的 Jekyll 主题上直接 fork 了 Clean Blog（这个主题也相当有名，就不多赘述了。唯一的缺点大概就是没有标签支持，于是hux给它补上了。）
+
+本地调试环境需要 `gem install jekyll`，如果 rubygem 的源被墙，可手动改成阿里的镜像源
+
+Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Less 里改就好了
+
+最后就进入了耗时反而最长的**做图、写字**阶段，也算是进入了**写博客**的正轨，因为是类似 Hack Day 的方式去搭这个站的。
+
+
+
+## 后记
+
+感谢[huxpro](huxpro.github.io)将此博客开源，本人使用纯粹是出于个人兴趣。
+
+在经历 v1.0 - v1.5 的蜕变后，这个博客主题愈发完整，不但增加了诸多 UI 层的优化（opinionated）；在代码层面，更加丰富的配置项也使得这个主题拥有了更好的灵活性与可拓展性。
+
+如果你恰好逛到了这里，希望你也能喜欢这个博客主题。
+
+—— Ysai 后记于 2019.01
+
+
