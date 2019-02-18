@@ -10,7 +10,7 @@ tags:
     - Blog
 ---
 
-> “Yeah It's on. ”
+> “This is my first blog. ”
 
 ## 前言
 
