@@ -1,278 +1,211 @@
 ---
 layout:     post
-title:      Git指令整理
-subtitle:   不适合阅读的整理的一些个人常用的 Git 指令
-date:       2017-02-15
-author:     BY
-header-img: img/post-bg-ios9-web.jpg
+title:      远程登录(桌面控制)软件
+subtitle:   SSH、FTP协议
+date:       2019-01-02
+author:     Ysai
+header-img: img/post-bg-login.jpg
 catalog: true
 tags:
     - 运维&测试
-    - Git
+    - Linux
 ---
 
->随便整理的一些自用的Git指令
+>随便整理的SSH、FTP远程登录(桌面控制)软件
+
+# 1、远程登录
+
+​       常用的远程登录包含SSH（类似命令终端，默认端口22）、FTP（文件传输，默认端口22），应用场景有windows、虚拟机、云服务器，不同软件对比如下：
+
+## 1.1  远程登录软件对比
+
+![](https://ws1.sinaimg.cn/large/e669e01fgy1g0ac1l0n1xj20p90nzdhu.jpg)
+
+## 1.2 Windows--->Ubuntu（虚拟机或服务器）
+
+### 推荐软件1：**FinalShell**
+
+特点：
+
+```
+多平台支持Windows,Mac OS,Linux；
+支持登录ssh终端、sftp同屏同步显示和Windows远程桌面；
+服务器网络,性能实时监控（内存,Cpu性能监控,Ping延迟丢包,Trace路由监控）,无需安装服务器插件；
+ssh和远程桌面均支持代理服务器；
+免费内网穿透,无需设置路由器,无需公网ip
+```
+
+下载及安装（**管理员安装**）：
+
+```javascript
+链接：http://www.hostbuf.com/t/988.html       http://www.hostbuf.com/downloads/finalshell_install.exe 
+管理员安装即可 
+```
+
+### 推荐软件2：**MobaXterm**
+
+特点：
+
+```javascript
+可以创建 SSH, Telnet, Rlogin, RDP, VNC, XDMCP, FTP, SFTP； 
+自动保存账号密码、支持拖放上传文件； 
+RDP或 XDMCP协议实现远程控制电脑； 
+有很多免费的插件 
+```
+
+下载及安装（**管理员安装**）：
+
+```javascript
+MobaXterm链接：https://mobaxterm.mobatek.net/download-home-edition.html 
+下载免安装版； 
+对***.exe属性里添加管理员权限； 
+以管理员身份运行安装***.exe并手动创建桌面快捷方式； 
+```
+
+![](https://ws1.sinaimg.cn/mw690/e669e01fgy1g0ac2zt7uyj20eq049mx6.jpg)
+
+![](https://ws1.sinaimg.cn/large/e669e01fgy1g0ac391umnj20k001e0sq.jpg)
+
+![](https://ws1.sinaimg.cn/mw690/e669e01fgy1g0ac44t4j3j20ha0lnta0.jpg)
+
+### 推荐软件3：**Xshell+WinSCP**
+
+特点：
+
+```javascript
+Xshell用于ssh登录，WinSCP用于SFTP传输文件，二者界面清爽、无额外插件；
+Xshell需要下载破解版、WinSCP对文件断点续传特别不友好；
+```
+
+下载及安装：
+
+```javascript
+Xshell破解版下载：http://www.pc0359.cn/downinfo/86592.html     https://www.7down.com/s/xshell/ 
+WinSCP下载：https://winscp.net/eng/download.php 
+正常安装即可 
+```
 
 
-# GitHub创建仓库提示代码
 
-	echo "# 项目名" >> README.md
-	git init
-	git add README.md
-	git commit -m "first commit"
-	git remote add origin git@github.com:qiubaiying/项目名.git
-	git push -u origin master
+## 1.2 Ubuntu（本地）--->Ubuntu（服务器）
 
-若仓库存在直接push
+### 推荐软件1：**FinalShell**
 
-	git remote add origin git@github.com:qiubaiying/test.git
-	git push -u origin master
+特点：
 
+```javascript
+多平台支持Windows,Mac OS,Linux； 
+支持登录ssh终端、sftp同屏同步显示和Windows远程桌面； 
+服务器网络,性能实时监控（内存,Cpu性能监控,Ping延迟丢包,Trace路由监控）,无需安装服务器插件； 
+ssh和远程桌面均支持代理服务器； 
+免费内网穿透,无需设置路由器,无需公网ip 
+```
 
-# 常用操作
+下载及安装：
 
-#### 创建仓库（初始化）
-	在当前指定目录下创建
-	git init
-	
-	新建一个仓库目录
-	git init [project-name]
-	
-	克隆一个远程项目
-	git clone [url]
-	
-#### 添加文件到缓存区
+```javascript
+链接：http://www.hostbuf.com/t/1059.html 
+安装： 
+rm -f finalshell_install.sh  
+wget finalshell_install.sh www.hostbuf.com/downloads/finalshell_install.sh 
+chmod +x finalshell_install.sh 
+sudo ./finalshell_install.sh 
+```
 
-	添加所有变化的文件
- 	git add .
+### 推荐软件2：**系统终端+FileZilla**
 
-	添加名称指定文件
-	git add text.txt
+特点：
 
-#### 配置
+```javascript
+系统终端用于ssh登录和sftp文件传输，FileZilla用于sftp文件传输 
+系统终端每次需要输入远程用户名、IP、密码，FileZilla常出BUG 
+```
 
-	设置提交代码时的用户信息
-	git config [--global] user.name "[name]"
-	git config [--global] user.email "[email address]"
-	
-	
-#### 提交
-	提交暂存区到仓库区
-	git commit -m "msg"
-	
-	# 提交暂存区的指定文件到仓库区
-	$ git commit [file1] [file2] ... -m [message]
-	
-	# 提交工作区自上次commit之后的变化，直接到仓库区
-	$ git commit -a
-	
-	# 提交时显示所有diff信息
-	$ git commit -v
-	
-	# 使用一次新的commit，替代上一次提交
-	# 如果代码没有任何新变化，则用来改写上一次commit的提交信息
-	$ git commit --amend -m [message]
-	
-	# 重做上一次commit，并包括指定文件的新变化
-	$ git commit --amend [file1] [file2] ...
-	
-#### 远程同步
+使用说明：
 
-	# 下载远程仓库的所有变动
-	$ git fetch [remote]
-	
-	# 显示所有远程仓库
-	$ git remote -v
-	
-	# 显示某个远程仓库的信息
-	$ git remote show [remote]
-	
-	# 增加一个新的远程仓库，并命名
-	$ git remote add [shortname] [url]
-	
-	# 取回远程仓库的变化，并与本地分支合并
-	$ git pull [remote] [branch]
-	
-	# 上传本地指定分支到远程仓库
-	$ git push [remote] [branch]
-	
-	# 强行推送当前分支到远程仓库，即使有冲突
-	$ git push [remote] --force
-	
-	# 推送所有分支到远程仓库
-	$ git push [remote] --all
+系统终端用于ssh登录，教程  <https://blog.csdn.net/jackghq/article/details/54974141>
+
+```javascript
+例如： 
+ssh ubuntu@139.198.190.207 
+其中ubuntu为远程服务器用户名，139.198.190.207远程服务器绑定的公网IP；之后对ECDSA key选择yes；输入远程服务器的用户密码即可。
+```
 
 
-	
-#### 分支
 
-	# 列出所有本地分支
-	$ git branch
-	
-	# 列出所有远程分支
-	$ git branch -r
-	
-	# 列出所有本地分支和远程分支
-	$ git branch -a
-	
-	# 新建一个分支，但依然停留在当前分支
-	$ git branch [branch-name]
-	
-	# 新建一个分支，并切换到该分支
-	$ git checkout -b [branch]
-	
-	# 新建一个分支，指向指定commit
-	$ git branch [branch] [commit]
-	
-	# 新建一个分支，与指定的远程分支建立追踪关系
-	$ git branch --track [branch] [remote-branch]
-	
-	# 切换到指定分支，并更新工作区
-	$ git checkout [branch-name]
-	
-	# 切换到上一个分支
-	$ git checkout -
-	
-	# 建立追踪关系，在现有分支与指定的远程分支之间
-	$ git branch --set-upstream [branch] [remote-branch]
-	
-	# 合并指定分支到当前分支
-	$ git merge [branch]
-	
-	# 选择一个commit，合并进当前分支
-	$ git cherry-pick [commit]
-	
-	# 删除分支
-	$ git branch -d [branch-name]
-	
-	# 删除远程分支
-	$ git push origin --delete [branch-name]
-	$ git branch -dr [remote/branch]
-	
-#### 标签Tags
+系统终端用于文件传输，教程  <https://blog.csdn.net/jackghq/article/details/64124062>
 
-	添加标签 在当前commit
-	git tag -a v1.0 -m 'xxx' 
-	
-	添加标签 在指定commit
-	git tag v1.0 [commit]
-	
-	查看
-	git tag
-	
-	删除
-	git tag -d V1.0
-	
-	删除远程tag
-	git push origin :refs/tags/[tagName]
-	
-	推送
-	git push origin --tags
-	
-	拉取
-	git fetch origin tag V1.0
+```javascript
+例如： 
+从服务器上下载文件   scp ubuntu@139.198.190.207:/home/ubuntu/aaa.py /home/ys/temp 
+其中scp命令将服务器中ubuntu用户下的aaa.py文件下载到本地（用户名ys）的 /home/ys/temp文件夹下 
+从本地上传到服务器   scp /home/ys/bbb.py ubuntu@139.198.190.207:/home/ubuntu/temp 
+其中scp命令将本地（用户名ys）下的bbb.py文件上传到服务器（用户名ubuntu）的 /home/ubuntu/temp文件夹下 
+注：涉及文件夹操作最好在使用  scp -r 命令以代替 scp 
+```
 
-	新建一个分支，指向某个tag
-	git checkout -b [branch] [tag]
+## 1.3 压缩文件以加速文件传输
 
-#### 查看信息
+无论从windows或ubuntu将文件上传至服务器或将服务器文件下载到本地，对于大型文件（100M以上）最好使用压缩包传输以提高效率。
 
-	# 显示有变更的文件
-	$ git status
-	
-	# 显示当前分支的版本历史
-	$ git log
-	
-	# 显示commit历史，以及每次commit发生变更的文件
-	$ git log --stat
-	
-	# 搜索提交历史，根据关键词
-	$ git log -S [keyword]
-	
-	# 显示某个commit之后的所有变动，每个commit占据一行
-	$ git log [tag] HEAD --pretty=format:%s
-	
-	# 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件
-	$ git log [tag] HEAD --grep feature
-	
-	# 显示某个文件的版本历史，包括文件改名
-	$ git log --follow [file]
-	$ git whatchanged [file]
-	
-	# 显示指定文件相关的每一次diff
-	$ git log -p [file]
-	
-	# 显示过去5次提交
-	$ git log -5 --pretty --oneline
-	
-	# 显示所有提交过的用户，按提交次数排序
-	$ git shortlog -sn
-	
-	# 显示指定文件是什么人在什么时间修改过
-	$ git blame [file]
-	
-	# 显示暂存区和工作区的差异
-	$ git diff
-	
-	# 显示暂存区和上一个commit的差异
-	$ git diff --cached [file]
-	
-	# 显示工作区与当前分支最新commit之间的差异
-	$ git diff HEAD
-	
-	# 显示两次提交之间的差异
-	$ git diff [first-branch]...[second-branch]
-	
-	# 显示今天你写了多少行代码
-	$ git diff --shortstat "@{0 day ago}"
-	
-	# 显示某次提交的元数据和内容变化
-	$ git show [commit]
-	
-	# 显示某次提交发生变化的文件
-	$ git show --name-only [commit]
-	
-	# 显示某次提交时，某个文件的内容
-	$ git show [commit]:[filename]
-	
-	# 显示当前分支的最近几次提交
-	$ git reflog
-	
-#### 撤销
-	
-	# 恢复暂存区的指定文件到工作区
-	$ git checkout [file]
-	
-	# 恢复某个commit的指定文件到暂存区和工作区
-	$ git checkout [commit] [file]
-	
-	# 恢复暂存区的所有文件到工作区
-	$ git checkout .
-	
-	# 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
-	$ git reset [file]
-	
-	# 重置暂存区与工作区，与上一次commit保持一致
-	$ git reset --hard
-	
-	# 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变
-	$ git reset [commit]
-	
-	# 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
-	$ git reset --hard [commit]
-	
-	# 重置当前HEAD为指定commit，但保持暂存区和工作区不变
-	$ git reset --keep [commit]
-	
-	# 新建一个commit，用来撤销指定commit
-	# 后者的所有变化都将被前者抵消，并且应用到当前分支
-	$ git revert [commit]
-	
-	# 暂时将未提交的变化移除，稍后再移入
-	$ git stash
-	$ git stash pop
-	
-#### 其他
+linux常见的2个压缩命令  <https://blog.csdn.net/songbinxu/article/details/80435665>
 
-	# 生成一个可供发布的压缩包
-	$ git archives
+```javascript
+.zip文件    # .zip占用空间比.tar.gz大；使用命令简单；文件夹压缩需要递归处理；不推荐使用 
+zip FileName.zip DirName    # 将DirName本身压缩 
+zip -r FileName.zip DirName # 压缩，递归处理，将指定目录下的所有文件和子目录一并压缩 
+unzip FileName.zip          # 解压 
+```
+
+
+
+```javascript
+.tar.gz 和 .tgz文件   # .tar.gz压缩率非常好、压缩与解压效率高；命令不太好记（参考键盘布局记忆）；推荐 
+tar -zcvf FileName.tar.gz DirName       # 将DirName和其下所有文件（夹）压缩 
+tar -zxvf FileName.tar.gz               # 解压 
+```
+
+注：.tar是打包，.tar.gz才是压缩过的文件，.tar.gz常见于unix系统，在ubuntu或macos可以直接压缩和解压，而.zip常见于windows系统
+
+# 2、远程桌面控制
+
+### 推荐软件1：**TeamViewer** 
+
+特点：
+
+```javascript
+个人版免费，支持多平台Windows,Mac OS ,Linux ,Chrome ,Android ,iOS等相互访问； 
+支持桌面显示、文件传输、语音视频；支持多用户同时访问； 
+每隔一定时间会自动断开； 
+```
+
+下载及安装：
+
+```javascript
+TeamViewer链接  https://www.teamviewer.com/cn/download/windows/ 
+Windows、Android正常安装即可，Ubuntu16 使用以下命令安装    
+sudo dpkg -i teamviewer_14.1.3399_amd64.deb 
+```
+
+
+
+## 推荐软件2：**FinalShell**
+
+特点：
+
+```javascript
+有Windows、Mac OS 、Linux版本，不支持跨平台相互访问； 
+仅支持桌面显示； 
+稳定性较好； 
+```
+
+# 参考
+
+> <https://hyjk2000.github.io/2012/03/16/how-to-set-up-ssh-keys/>
+>
+> <https://www.ngrok.cc/user.html>
+>
+> <https://bingozb.github.io/54.html>
+>
+> <https://llinmeng.github.io/2015/08/05/windows-ssh-tools-diff/#more>
+
