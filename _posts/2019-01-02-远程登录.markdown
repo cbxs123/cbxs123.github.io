@@ -27,7 +27,7 @@ tags:
 
 特点：
 
-```
+```html
 多平台支持Windows,Mac OS,Linux；
 支持登录ssh终端、sftp同屏同步显示和Windows远程桌面；
 服务器网络,性能实时监控（内存,Cpu性能监控,Ping延迟丢包,Trace路由监控）,无需安装服务器插件；
@@ -37,7 +37,7 @@ ssh和远程桌面均支持代理服务器；
 
 下载及安装（**管理员安装**）：
 
-```javascript
+```html
 链接：http://www.hostbuf.com/t/988.html       http://www.hostbuf.com/downloads/finalshell_install.exe 
 管理员安装即可 
 ```
@@ -46,7 +46,7 @@ ssh和远程桌面均支持代理服务器；
 
 特点：
 
-```javascript
+```html
 可以创建 SSH, Telnet, Rlogin, RDP, VNC, XDMCP, FTP, SFTP； 
 自动保存账号密码、支持拖放上传文件； 
 RDP或 XDMCP协议实现远程控制电脑； 
@@ -55,7 +55,7 @@ RDP或 XDMCP协议实现远程控制电脑；
 
 下载及安装（**管理员安装**）：
 
-```javascript
+```html
 MobaXterm链接：https://mobaxterm.mobatek.net/download-home-edition.html 
 下载免安装版； 
 对***.exe属性里添加管理员权限； 
@@ -72,14 +72,14 @@ MobaXterm链接：https://mobaxterm.mobatek.net/download-home-edition.html
 
 特点：
 
-```javascript
+```html
 Xshell用于ssh登录，WinSCP用于SFTP传输文件，二者界面清爽、无额外插件；
 Xshell需要下载破解版、WinSCP对文件断点续传特别不友好；
 ```
 
 下载及安装：
 
-```javascript
+```html
 Xshell破解版下载：http://www.pc0359.cn/downinfo/86592.html     https://www.7down.com/s/xshell/ 
 WinSCP下载：https://winscp.net/eng/download.php 
 正常安装即可 
@@ -93,7 +93,7 @@ WinSCP下载：https://winscp.net/eng/download.php
 
 特点：
 
-```javascript
+```html
 多平台支持Windows,Mac OS,Linux； 
 支持登录ssh终端、sftp同屏同步显示和Windows远程桌面； 
 服务器网络,性能实时监控（内存,Cpu性能监控,Ping延迟丢包,Trace路由监控）,无需安装服务器插件； 
@@ -103,7 +103,7 @@ ssh和远程桌面均支持代理服务器；
 
 下载及安装：
 
-```javascript
+```html
 链接：http://www.hostbuf.com/t/1059.html 
 安装： 
 rm -f finalshell_install.sh  
@@ -116,7 +116,7 @@ sudo ./finalshell_install.sh
 
 特点：
 
-```javascript
+```html
 系统终端用于ssh登录和sftp文件传输，FileZilla用于sftp文件传输 
 系统终端每次需要输入远程用户名、IP、密码，FileZilla常出BUG 
 ```
@@ -125,7 +125,7 @@ sudo ./finalshell_install.sh
 
 系统终端用于ssh登录，教程  <https://blog.csdn.net/jackghq/article/details/54974141>
 
-```javascript
+```html
 例如： 
 ssh ubuntu@139.198.190.207 
 其中ubuntu为远程服务器用户名，139.198.190.207远程服务器绑定的公网IP；之后对ECDSA key选择yes；输入远程服务器的用户密码即可。
@@ -135,7 +135,7 @@ ssh ubuntu@139.198.190.207
 
 系统终端用于文件传输，教程  <https://blog.csdn.net/jackghq/article/details/64124062>
 
-```javascript
+```html
 例如： 
 从服务器上下载文件   scp ubuntu@139.198.190.207:/home/ubuntu/aaa.py /home/ys/temp 
 其中scp命令将服务器中ubuntu用户下的aaa.py文件下载到本地（用户名ys）的 /home/ys/temp文件夹下 
@@ -150,7 +150,7 @@ ssh ubuntu@139.198.190.207
 
 linux常见的2个压缩命令  <https://blog.csdn.net/songbinxu/article/details/80435665>
 
-```javascript
+```html
 .zip文件    # .zip占用空间比.tar.gz大；使用命令简单；文件夹压缩需要递归处理；不推荐使用 
 zip FileName.zip DirName    # 将DirName本身压缩 
 zip -r FileName.zip DirName # 压缩，递归处理，将指定目录下的所有文件和子目录一并压缩 
@@ -159,7 +159,7 @@ unzip FileName.zip          # 解压
 
 
 
-```javascript
+```html
 .tar.gz 和 .tgz文件   # .tar.gz压缩率非常好、压缩与解压效率高；命令不太好记（参考键盘布局记忆）；推荐 
 tar -zcvf FileName.tar.gz DirName       # 将DirName和其下所有文件（夹）压缩 
 tar -zxvf FileName.tar.gz               # 解压 
@@ -173,7 +173,7 @@ tar -zxvf FileName.tar.gz               # 解压
 
 特点：
 
-```javascript
+```html
 个人版免费，支持多平台Windows,Mac OS ,Linux ,Chrome ,Android ,iOS等相互访问； 
 支持桌面显示、文件传输、语音视频；支持多用户同时访问； 
 每隔一定时间会自动断开； 
@@ -181,7 +181,7 @@ tar -zxvf FileName.tar.gz               # 解压
 
 下载及安装：
 
-```javascript
+```html
 TeamViewer链接  https://www.teamviewer.com/cn/download/windows/ 
 Windows、Android正常安装即可，Ubuntu16 使用以下命令安装    
 sudo dpkg -i teamviewer_14.1.3399_amd64.deb 
@@ -193,7 +193,7 @@ sudo dpkg -i teamviewer_14.1.3399_amd64.deb
 
 特点：
 
-```javascript
+```html
 有Windows、Mac OS 、Linux版本，不支持跨平台相互访问； 
 仅支持桌面显示； 
 稳定性较好； 
