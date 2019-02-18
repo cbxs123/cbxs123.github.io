@@ -4,7 +4,7 @@ title:      远程登录(桌面控制)软件
 subtitle:   SSH、FTP协议
 date:       2019-01-02
 author:     Ysai
-header-img: img/post-bg-login.jpg
+header-img: img/post-bg-web.jpg
 catalog: true
 tags:
     - 运维&测试
