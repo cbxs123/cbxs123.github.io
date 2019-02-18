@@ -7,8 +7,8 @@ author:     "Hux"
 header-img: "img/post-bg-unix-linux.jpg"
 catalog: true
 tags:
-  - 运维&测试
-  - Linux
+    - 运维&测试
+    - Linux
 ---
 
 > This document is not completed and will be updated anytime.
@@ -65,7 +65,6 @@ An **object-oriented**, multitasking OS. Low-level C but High-level OC language 
 		- Symbian OS (with PIPS)
 			- Symbian was a closed-source OS.
 
-
 ---
 
 ## Unix-like
@@ -89,7 +88,6 @@ The iOS kernal is **XNU**, the kernal of Darwin.
 
 #### XNU Kernel
 XNU, the acronym(首字母缩写) for ***X is Not Unix***, which is the **Computer OS Kernel** developed at Apple Inc since Dec 1996 for use in the Mac OS X and released as free open source software as part of Darwin.
-
 
 ---
 
@@ -152,7 +150,7 @@ Android is a mobile OS based on **Linux Kernel**, so it's definitely **Unix-like
 Android's source code is released by Google under open source licenses, although most Android devices ultimately ship with a combination of open source and proprietary software, including proprietary software developed and licensed by Google *(GMS are all proprietary)*  
 
 #### Android Kernel
-  
+
 Android's kernel is based on one of the Linux kernel's long-term support (LTS) branches.   
 
 **Android's variant of the Linux kernel** has further architectural changes that are implemented by Google outside the typical Linux kernel development cycle, and, certain features that Google contributed back to the Linux kernel. Google maintains a public code repo that contains their experimental work to re-base Android off the latest stable Linux versions.
