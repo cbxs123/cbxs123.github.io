@@ -110,9 +110,13 @@ page-mathjax: false
 
 # Friends
 friends: [
-{
+    {
         title: "Hux",
         href: "https://github.com/Huxpro"
+    },
+    {
+        title: "saili",
+        href: "http://saili.science/"
     },
     {
         title: "浩男",

@@ -13,9 +13,9 @@ tags:
 
 > 正所谓前人栽树，后人乘凉。
 > 
-> 感谢[Huxpro](https://github.com/huxpro)提供的博客模板
+> 感谢[Huxpro](https://github.com/huxpro)&[Saili](http://saili.science/2017/04/02/github-for-win/#h5palyer)提供的博客模板
 > 
-> [我的的博客](http://qiubaiying.top)
+> [我的博客](http://qiubaiying.top)
 
 # 前言
 
