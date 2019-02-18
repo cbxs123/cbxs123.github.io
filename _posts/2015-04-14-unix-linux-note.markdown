@@ -7,7 +7,8 @@ author:     "Hux"
 header-img: "img/post-bg-unix-linux.jpg"
 catalog: true
 tags:
-  - 笔记
+  - 运维&测试
+  - Linux
 ---
 
 > This document is not completed and will be updated anytime.

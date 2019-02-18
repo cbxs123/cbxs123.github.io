@@ -7,8 +7,7 @@ author:     BY
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
-    - Mac
-    - 终端
+    - 运维&测试
     - Git
 ---
 

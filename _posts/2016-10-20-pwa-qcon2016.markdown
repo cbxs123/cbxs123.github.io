@@ -7,9 +7,9 @@ navcolor:   "invert"
 date:       2016-10-20
 author:     "Hux"
 tags:
-    - Slides
-    - Web
-    - PWA
+    - 前端开发
+    - WebApp
+
 ---
 
 
