@@ -110,11 +110,15 @@ page-mathjax: false
 
 # Friends
 friends: [
+{
+        title: "Hux",
+        href: "https://github.com/Huxpro"
+    },
     {
         title: "浩男",
         href: "https://github.com/haonanli"
     },{
-        title: "BY",
+        title: "BYing",
         href: "http://www.jianshu.com/u/e71990ada2fd"
     }
 ]
