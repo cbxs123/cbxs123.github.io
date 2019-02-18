@@ -2,8 +2,8 @@
 layout:     post
 title:      快速搭建个人博客
 subtitle:   手把手教你在半小时内搭建自己的个人博客(如果不踩坑的话🙈🙊🙉)
-date:       2017-02-06
-author:     BY
+date:       2019-01-06
+author:     Ysai
 header-img: img/post-bg-re-vs-ng2.jpg
 catalog: true
 tags:
@@ -18,6 +18,7 @@ tags:
 > [我的的博客](http://qiubaiying.top)
 
 # 前言
+
 从 Jekyll 到 GitHub Pages 中间踩了许多坑，终于把我的个人博客[BY Blog](http://qiubaiying.top)搭建出来了。。。
 
 本教程针对的是不懂技术又想搭建个人博客的小白，操作简单暴力且快速。当然懂技术那就更好了。
@@ -689,7 +690,6 @@ Mac 上的图床神器：iPic
 
 ![iPic上传图片](http://upload-images.jianshu.io/upload_images/2178672-4be76fb02708de5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
 #### 推荐几个好用软件
 
 ##### MarkDown编辑器
@@ -715,6 +715,45 @@ Mac 上的图床神器：iPic
 ![ImageOptim压缩图片](http://upload-images.jianshu.io/upload_images/2178672-0f8e643fa1da8674.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 好了，现在个人博客的加载速度估计要起飞了~
+
+#### 网站人数统计([参考](https://sunbossrs.github.io/2019/01/11/Self_WebsiteTotal.html))
+
+首先，打开你的网站目录*Jekyll*，打开你的`footer.html`网站结尾文件。 
+`footer.html`是在`/_includes`目录下的。有的可能是`footer.php`或者是`footer.esp`。这里是`jekyll`，用的是`footer.html`。 
+打开`footer.html`后，把这行代码插在*Build on Jekyll | Theme xxx*文字的下面。 
+
+**再次提醒，原来的已经不行了。原来的代码如下**
+
+
+```html
+<p>
+<div class="busuanzi-count">
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span class="site-uv" title="总点击人数">
+<img src="/assets/vendor/octicons/svg/person.svg" width="10" height="16">
+<span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+<span class="site-pv" title="总点击量">
+<img src="/assets/vendor/octicons/svg/eye.svg" width="16" height="16">
+<span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+<span class="page-pv"title="本页面点击人数">
+<img src="/assets/vendor/octicons/svg/file-text.svg" width="12" height="16">
+<span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span>
+</div>
+</p>
+```
+
+#####  **改进后的简化代码如下：:smile:**
+
+```html
+    <!-- 网站计数器 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="site_pv_count" title="总点击量"><img src="/assets/vendor/octicons/svg/eye.svg" width=16 height=16> <span id="busuanzi_value_site_pv"></span></span> &nbsp; &nbsp; | &nbsp; &nbsp; <span id="site_uv_count" title="总访客量"> <img src="/assets/vendor/octicons/svg/person.svg" width=10 height=16> <span id="busuanzi_value_site_uv"></span></span>
+    <!-- 到此为止 -->
+```
+
+这里比较麻烦。。。因为指定了文件。请点击这个按钮，下载文件（svg包）
+<a class="btn" href='https://coding.net/u/SunbossRS/p/GotBlogDowner/git/raw/master/filedown/Wangzhantongji_svg.zip'>点击这里</a>
+解压后看见assets文件夹，把assets文件夹放到网站的目录下，OK了。 
 
 # 最后要说个事情
 
