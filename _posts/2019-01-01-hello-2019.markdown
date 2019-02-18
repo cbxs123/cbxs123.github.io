@@ -24,7 +24,7 @@ Ysai的 Blog 就这么开通了。
 
 作为一个菜鸟程序员，记录学习到的新知识是必要的。[有道云笔记](https://note.youdao.com/web)是个不错的私人选择，支持网页及各种终端操作；[知乎](https://www.zhihu.com/)和[简书](https://www.jianshu.com/)则属于社交类博客网站。然而这些平台的交互性和易读性均有所欠缺。
 
-在比较了[GitHub](https://github.com/)上大神的个人博客后，感觉有几个还不错：[huxpro](huxpro.github.io)、[qiubaiying](qiubaiying.github.io)、[yansu](suyan.github.io)、[gaohaoyang](gaohaoyang.github.io)、[mzlogin](mzlogin.github.io)、[yingchi](http://yingchi.io/)、[yihui](https://yihui.name/)、[chaosky](http://chaosky.me/)、[linuxeye](https://blog.linuxeye.cn/)...
+在比较了[GitHub](https://github.com/)上大神的个人博客后，感觉有几个还不错：[huxpro](huxpro.github.io)、[qiubaiying](qiubaiying.github.io)、[yizhibi](yizibi.github.io)、[sunbossrs](sunbossrs.github.io)、[yansu](suyan.github.io)、[gaohaoyang](gaohaoyang.github.io)、[mzlogin](mzlogin.github.io)、[yingchi](http://yingchi.io/)、[yihui](https://yihui.name/)、[chaosky](http://chaosky.me/)、[linuxeye](https://blog.linuxeye.cn/)...
 
 
 <p id = "build"></p>
