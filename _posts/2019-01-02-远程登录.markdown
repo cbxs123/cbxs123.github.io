@@ -17,13 +17,13 @@ tags:
 
 ​       常用的远程登录包含SSH（类似命令终端，默认端口22）、FTP（文件传输，默认端口22），应用场景有windows、虚拟机、云服务器，不同软件对比如下：
 
-## 1.1  远程登录软件对比
+### 1.1  远程登录软件对比
 
 ![](https://ws1.sinaimg.cn/large/e669e01fgy1g0ac1l0n1xj20p90nzdhu.jpg)
 
-## 1.2 Windows--->Ubuntu（虚拟机或服务器）
+### 1.2 Windows--->Ubuntu（虚拟机或服务器）
 
-### 推荐软件1：**FinalShell**
+##### 推荐软件1：**FinalShell**
 
 特点：
 
@@ -42,7 +42,7 @@ ssh和远程桌面均支持代理服务器；
 管理员安装即可 
 ```
 
-### 推荐软件2：**MobaXterm**
+##### 推荐软件2：**MobaXterm**
 
 特点：
 
@@ -68,7 +68,7 @@ MobaXterm链接：https://mobaxterm.mobatek.net/download-home-edition.html
 
 ![](https://ws1.sinaimg.cn/mw690/e669e01fgy1g0ac44t4j3j20ha0lnta0.jpg)
 
-### 推荐软件3：**Xshell+WinSCP**
+##### 推荐软件3：**Xshell+WinSCP**
 
 特点：
 
@@ -87,9 +87,9 @@ WinSCP下载：https://winscp.net/eng/download.php
 
 
 
-## 1.2 Ubuntu（本地）--->Ubuntu（服务器）
+### 1.2 Ubuntu（本地）--->Ubuntu（服务器）
 
-### 推荐软件1：**FinalShell**
+##### 推荐软件1：**FinalShell**
 
 特点：
 
@@ -112,7 +112,7 @@ chmod +x finalshell_install.sh
 sudo ./finalshell_install.sh 
 ```
 
-### 推荐软件2：**系统终端+FileZilla**
+##### 推荐软件2：**系统终端+FileZilla**
 
 特点：
 
@@ -144,7 +144,7 @@ ssh ubuntu@139.198.190.207
 注：涉及文件夹操作最好在使用  scp -r 命令以代替 scp 
 ```
 
-## 1.3 压缩文件以加速文件传输
+### 1.3 压缩文件以加速文件传输
 
 无论从windows或ubuntu将文件上传至服务器或将服务器文件下载到本地，对于大型文件（100M以上）最好使用压缩包传输以提高效率。
 
@@ -169,7 +169,7 @@ tar -zxvf FileName.tar.gz               # 解压
 
 # 2、远程桌面控制
 
-### 推荐软件1：**TeamViewer** 
+##### 推荐软件1：**TeamViewer**
 
 特点：
 
@@ -189,7 +189,7 @@ sudo dpkg -i teamviewer_14.1.3399_amd64.deb
 
 
 
-## 推荐软件2：**FinalShell**
+##### 推荐软件2：**FinalShell**
 
 特点：
 
