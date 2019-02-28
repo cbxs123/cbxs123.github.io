@@ -14,6 +14,14 @@ sidebar: true                           # whether or not using Sidebar.
 #sidebar-about-description: "Goals determine what you going to be!"
 sidebar-avatar: /img/about-YS-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
 
 # Publish posts or collection documents with a future date.
 future: true
