@@ -4,7 +4,7 @@ title:      Linux记录-1
 subtitle:   常用命令
 date:       2019-02-28
 author:     Ysai
-header-img: img/post-bg-ssh.jpg
+header-img: img/post-bg-linux-1.jpg
 catalog: true
 tags:
     - 运维&测试
