@@ -73,8 +73,8 @@ kramdown:
 
 
 # 评论系统
-Disqus（https://disqus.com/）
-disqus_username: YS
+#Disqus（https://disqus.com/）
+#disqus_username: YS
 
 # Gitalk
 gitalk:
