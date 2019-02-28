@@ -19,7 +19,7 @@ tags:
 
 > https://blog.csdn.net/boonya/article/details/77949438
 
-**### Ubuntu关闭端口**
+### **1、 Ubuntu关闭端口**
 
 1、首先进入root : 
 
@@ -59,7 +59,7 @@ kill -9 PID号
 
 ps：kill就是给某个进程id发送了一个信号。默认发送的信号是SIGTERM，而kill -9发送的信号是SIGKILL，即exit。exit信号不会被系统阻塞，所以kill -9能顺利杀掉进程。
 
-### **Ubuntu打开端口**
+### **2、Ubuntu打开端口**
 
 1、安装iptables
 
