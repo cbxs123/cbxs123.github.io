@@ -21,7 +21,7 @@ tags:
 
 [VyprVPN官网](https://www.fanqiangzhe.com/go/vyprvpn-cn)（不需翻墙）
 
-### [PureVPN官网](http://www.fanqiangzhe.com/go/purevpn)（需翻墙）
+[PureVPN官网](http://www.fanqiangzhe.com/go/purevpn)（需翻墙）
 
 # **2、业余免费翻墙软件**
 
@@ -125,7 +125,7 @@ bash <(curl -L -s https://install.direct/go.sh)
 >
 > v2ray 一键部署 & 管理脚本， 支持多端口多协议管理<https://github.com/Jrohy/multi-v2ray>
 >
-> V2Ray一键安装脚本<https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC>
+> V2Ray一键安装脚本<https://github.com/233boy/v2ray/wiki/V2Ray一键安装脚本>
 
 
 
