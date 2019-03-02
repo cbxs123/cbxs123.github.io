@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Linux记录-1
-subtitle:   常用命令
+subtitle:   端口、性能、终端、截图
 date:       2019-02-28
 author:     Ysai
 header-img: img/post-bg-linux-1.jpg
