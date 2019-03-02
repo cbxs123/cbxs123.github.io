@@ -1,0 +1,133 @@
+---
+layout:     post
+title:      科学上网汇总
+subtitle:   ssr、v2ray
+date:       2019-03-02
+author:     Ysai
+header-img: img/post-bg-vpn.jpg
+catalog: true
+tags:
+    - 运维&测试
+    - 网络
+---
+
+>**科学上网指南-VPN、ssr、v2ray**
+
+# **1、专业付费翻墙软件（VPN）**
+
+[ExpressVPN官网](https://www.fanqiangzhe.com/go/expressvpn)（不需翻墙）
+
+[NordVPN官网](https://www.fanqiangzhe.com/go/nordvpn-cn)（不需翻墙）
+
+[VyprVPN官网](https://www.fanqiangzhe.com/go/vyprvpn-cn)（不需翻墙）
+
+### [PureVPN官网](http://www.fanqiangzhe.com/go/purevpn)（需翻墙）
+
+# **2、业余免费翻墙软件**
+
+### **2.1蓝灯（Lantern）**
+
+下载地址：[蓝灯官网](https://getlantern.org/)（需翻墙），[Github](https://github.com/getlantern/forum#%E8%93%9D%E7%81%AFlantern%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E4%B8%8B%E8%BD%BD)（不需要翻墙）
+
+蓝灯（Lantern）是一个代理类翻墙工具，分为专业版和免费版。专业版没有流量和速度限制，并且支持多台设备同时连接。专业版只能按年购买，不能按月购买。**蓝灯免费版可以免费使用**，但每月的流量限制是500MB，流量用完后连接速度会降到很低（100KB/s），看文字内容基本还可以，但图片打开非常慢，就更别提视频了。但是对于偶尔翻墙、对速度和稳定性要求不好的网友来说，蓝灯免费版是一个不错的选择。
+
+### **2.2赛风（Psiphon）**
+
+下载地址：[赛风官网](https://psiphon.ca/zh/download.html)（需翻墙），[镜像](https://s3.amazonaws.com/0ozb-6kaj-r0p8/zh/download.html)（不需要翻墙）
+
+赛风（Psiphon）是一款老牌翻墙软件，其最新版本利用VPN、SSH和HTTP代理软件提供翻墙服务。用户可以选择位于不同国家的服务器。但目前赛风只支持 Windows 电脑和安卓手机及平板，有时会出现稳定性、速度不理想的情况，而且在某些地区已遭到屏蔽。
+
+### **2.3Tor**
+
+下载地址：[Tor官网](https://www.torproject.org/download/download-easy.html)（需翻墙）
+
+Tor是一个老牌翻墙软件，曾一度被封，但最新版本在中国目前可用。Tor的安装、设置并不特别简单直观，需要参考相应教程。使用Tor翻墙时用户需要使用专门的浏览器Tor Browser，可能很多人对此感觉不是非常习惯。另外用Tor翻墙速度经常很慢，而且Tor再度被封的风险还是很高的。除此之外，还可以考虑其它[免费VPN](https://www.fanqiangzhe.com/post/free-vpn-guide/)。
+
+# **3、极客自建翻墙软件**
+
+### **3.1 ss/ssr**
+
+##### **3.1.1简介**
+
+Shadowsocks（影梭，简称SS）是近年出现的一种基于Socks5代理的翻墙软件，比起VPN，Shadowsocks更难被GFW发现和封锁，速度和稳定性也都很好。ssR是ss升级版，稳定性和安全性较ss更好，但该项目受不可控因素暂停更新，已从GitHub下架。
+
+ss网站：[Shadowsocks官网](https://shadowsocks.org/)（需翻墙），[Github](https://github.com/shadowsocks)（不需要翻墙）
+
+ssr客户端下载：[ssr客户端备份1](https://github.com/zyfworks/ssr-backup)，[ssr客户端备份2](https://ssr.tools/175)，[electron-ssr客户端](https://github.com/erguotou520/electron-ssr)
+
+##### **3.1.2**[**自己搭建ss/ssr服务器教程**](https://github.com/shadowsocks/shadowsocks-windows/issues/1709)
+
+一、购买海外VPS（非阿里云、腾讯云），如vultr(https://www.vultr.com)、搬瓦工（https://bwh1.net/index.php）...
+
+二、在Windows使用命令终端finallshell(http://www.hostbuf.com/t/988.html)，运行如下命令：
+
+```javascript
+yum -y install wget 
+wget -N --no-check-certificate https://softs.fun/Bash/ssr.sh && chmod +x ssr.sh && bash ssr.sh 
+备用脚本1： 
+yum -y install wget 
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh 
+备份脚本2： yum -y install wget 
+wget https://github.com/mu228/ssr/raw/master/ssr.sh && bash ssr.sh 
+```
+
+三、一键加速VPS服务器【谷歌BBR加速教程】
+
+```javascript
+yum -y install wget wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh chmod +x bbr.sh ./bbr.sh 
+```
+
+四、使用客户端
+
+```
+ss客户端链接（https://github.com/shadowsocks/shadowsocks-windows/releases） 
+ssr客户端备份链接（https://github.com/cbxs123/ssr-backup） 
+PAC文件备份（https://github.com/Alvin9999/new-pac） 
+```
+
+##### 3.1.3[个人参考：](ssr://NjYuNDIuNzguMjI2OjIwNzEyOmF1dGhfY2hhaW5fYjphZXMtMjU2LWNmYjg6dGxzMS4yX3RpY2tldF9hdXRoOmMyUTNhSEoxWno5cVpHcG9RVFUyLz9vYmZzcGFyYW09)
+
+> 个人收集整理科学上网的资料<https://github.com/wcmbeta/GFWdata>
+>
+> SS/SSR 简介<https://congcong0806.github.io/2018/04/20/SS/>
+
+
+
+### **3.2 v2ray**
+
+##### **3.2.1简介**
+
+V2Ray 是一个与 Shadowsocks 类似的代理软件，可以用来科学上网（翻墙）学习国外先进科学技术，比ssr配置复杂，但安全性和传输速度更好。
+
+v2ray网站：[官网](https://toutyrater.github.io/)，[GitHub](https://github.com/topics/v2ray)
+
+v2ray客户端：[客户端备份1](https://www.lutizi.com/v2rayclients/)、[客户端备份2](http://xiaosiqi.me/?p=776)
+
+##### **3.2.2**[**自己搭建v2ray服务器教程**](http://xiaosiqi.me/?p=776)
+
+一、购买海外VPS（非阿里云、腾讯云），如vultr(https://www.vultr.com)、搬瓦工（https://bwh1.net/index.php）...
+
+二、在Windows使用命令终端finallshell(http://www.hostbuf.com/t/988.html)，运行如下命令：
+
+```javascript
+apt-get update -y && apt-get install curl -y 
+方法1：https://github.com/233boy/v2ray/wiki/V2Ray一键安装脚本 
+bash <(curl -s -L https://git.io/v2ray.sh) 
+方法2：https://github.com/Jrohy/multi-v2ray#安装命令 
+source <(curl -sL https://git.io/fNgqx) 
+方法3：http://xiaosiqi.me/?p=776 
+bash <(curl -L -s https://install.direct/go.sh) 
+```
+
+##### 3.2.3个人参考：
+
+> V2Ray 配置指南<https://github.com/ToutyRater/v2ray-guide>
+>
+> v2ray 一键部署 & 管理脚本， 支持多端口多协议管理<https://github.com/Jrohy/multi-v2ray>
+>
+> V2Ray一键安装脚本<https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC>
+
+
+
+
+
