@@ -16,7 +16,9 @@ tags:
 # **代码托管平台（Github、Git）**
 
 > **国内外代码托管平台汇总-简书**  <https://www.jianshu.com/p/bd24f3202011>
+> 
 > **有哪些稳定好用的代码托管服务-知乎**  <https://www.zhihu.com/question/19614403>
+> 
 > **Git，Github和Gitlab简介和基本使用**  <https://www.jianshu.com/p/8d497989f704>
 
 # **1、平台汇总**
@@ -49,24 +51,25 @@ tags:
 # **2、**[**软件使用**](https://gitee.com/all-about-git)
 
 **Git**：下载及使用如下（推荐），**重点推荐** <https://gitee.com/all-about-git> ，包含**Git GUI 客户端、Git IDE 插件、Git 浏览器插件、搭建 Git 服务、Git 教程、Git 常用命令**
-
 > 下载 <https://git-scm.com/downloads>
+> 
 > 使用 <http://www.runoob.com/git/git-install-setup.html>
 
 **GitHub Desktop**：Github自己的桌面版客户端，含Windows和Mac版本，不需要写git命令，直接鼠标点
-
 > 下载 <https://desktop.github.com/>
+> 
 > 使用 <https://www.jianshu.com/p/1e45b93bd593>
 
 **Mercurial**：下载及使用如下（不常用）
-
 > <https://blog.csdn.net/moonspiritacm/article/details/80863421>
+> 
 > <https://zh-hginit.readthedocs.io/en/latest/groundup/>
+> 
 > <https://blog.csdn.net/lanxuezaipiao/article/details/16971275>
 
-# **3、 Git 常用命令**
+# **3、Git 常用命令**
 
-### 仓库
+##### 仓库
 ```markdown
 # 在当前目录新建一个Git代码库
 $ git init
@@ -75,7 +78,7 @@ $ git init [project-name]
 # 下载一个项目和它的整个代码历史
 $ git clone [url]
 ```
-### 配置
+##### 配置
 ```markdown
 # 显示当前的Git配置
 $ git config --list
@@ -85,7 +88,7 @@ $ git config -e [--global]
 $ git config [--global] user.name "[name]"
 $ git config [--global] user.email "[email address]"
 ```
-### 增加/删除文件
+##### 增加/删除文件
 ```markdown
 # 添加指定文件到暂存区
 $ git add [file1] [file2] ...
@@ -103,7 +106,7 @@ $ git rm --cached [file]
 # 改名文件，并且将这个改名放入暂存区
 $ git mv [file-original] [file-renamed]
 ```
-### 代码提交
+##### 代码提交
 ```markdown
 # 提交暂存区到仓库区
 $ git commit -m [message]
@@ -119,8 +122,7 @@ $ git commit --amend -m [message]
 # 重做上一次commit，并包括指定文件的新变化
 $ git commit --amend [file1] [file2] ...
 ```
-### 分支
-
+##### 分支
 ```markdown
 # 列出所有本地分支
 $ git branch
@@ -152,7 +154,7 @@ $ git branch -d [branch-name]
 $ git push origin --delete [branch-name]
 $ git branch -dr [remote/branch]
 ```
-### 标签
+##### 标签
 ```markdown
 # 列出所有tag
 $ git tag
@@ -173,7 +175,7 @@ $ git push [remote] --tags
 # 新建一个分支，指向某个tag
 $ git checkout -b [branch] [tag]
 ```
-### 查看信息
+##### 查看信息
 ```markdown
 # 显示有变更的文件
 $ git status
@@ -217,7 +219,7 @@ $ git show [commit]:[filename]
 # 显示当前分支的最近几次提交
 $ git reflog
 ```
-### 远程同步
+##### 远程同步
 ```markdown
 # 下载远程仓库的所有变动
 $ git fetch [remote]
@@ -236,7 +238,7 @@ $ git push [remote] --force
 # 推送所有分支到远程仓库
 $ git push [remote] --all
 ```
-### 撤销
+##### 撤销
 ```markdown
 # 恢复暂存区的指定文件到工作区
 $ git checkout [file]
@@ -261,16 +263,16 @@ $ git revert [commit]
 $ git stash
 $ git stash pop
 ```
-### 其他
+##### 其他
 ```markdown
 # 生成一个可供发布的压缩包
 $ git archive
 ```
 
-# **4、 使用建议**
+# **4、使用建议**
 
-​        对于程序员来说，**会使用代码托管平台**以及版本控制软件，是非常必要的技能。尤其是像 Github 这样可以作为程序员简历的一部分的「极客社交平台」。多参与优秀开源项目的 Bug 修改、功能添加；自己也可以发布自己的代码仓库，并做好维护，让别人来参与。这是打开业界知名度的好方法。
+&ensp;&ensp;&ensp;&ensp;对于程序员来说，**会使用代码托管平台**以及版本控制软件，是非常必要的技能。尤其是像 Github 这样可以作为程序员简历的一部分的「极客社交平台」。多参与优秀开源项目的 Bug 修改、功能添加；自己也可以发布自己的代码仓库，并做好维护，让别人来参与。这是打开业界知名度的好方法。
 
-​        使用代码托管平台可以锻炼我们使用**版本控制软件**（如 Git，Mercurial，等等）的能力。对于企业来说，使用一个代码托管平台背后的软件非常重要。当今这个时代，如果一个IT企业内部没有代码控制，那简直不可想象。个人比较推荐 Gitlab。
+&ensp;&ensp;&ensp;&ensp; 使用代码托管平台可以锻炼我们使用**版本控制软件**（如 Git，Mercurial，等等）的能力。对于企业来说，使用一个代码托管平台背后的软件非常重要。当今这个时代，如果一个IT企业内部没有代码控制，那简直不可想象。个人比较推荐 Gitlab。
 
-​        做好个人的**本地备份**也很要紧。虽然目前在线代码托管平台很多，但作为程序员最好有危机意识。至少买一块移动硬盘吧，把自己写的重要的代码定期备份起来。
+&ensp;&ensp;&ensp;&ensp;做好个人的**本地备份**也很要紧。虽然目前在线代码托管平台很多，但作为程序员最好有危机意识。至少买一块移动硬盘吧，把自己写的重要的代码定期备份起来。
