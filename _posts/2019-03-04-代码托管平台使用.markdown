@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      云平台使用记录
-subtitle:   青云、阿里云、Vutrl
+subtitle:   Github、Git
 date:       2019-03-04
 author:     Ysai
 header-img: img/post-bg-git.jpg
@@ -13,7 +13,7 @@ tags:
 
 
 
-# **代码托管平台（Github、Coding）**
+# **代码托管平台（Github、Git）**
 
 > **国内外代码托管平台汇总-简书**  <https://www.jianshu.com/p/bd24f3202011>
 > **有哪些稳定好用的代码托管服务-知乎**  <https://www.zhihu.com/question/19614403>
