@@ -1,0 +1,276 @@
+---
+layout:     post
+title:      云平台使用记录
+subtitle:   青云、阿里云、Vutrl
+date:       2019-03-04
+author:     Ysai
+header-img: img/post-bg-git.jpg
+catalog: true
+tags:
+    - 云计算&大数据
+    - 云平台
+---
+
+
+
+# **代码托管平台（Github、Coding）**
+
+> **国内外代码托管平台汇总-简书**  <https://www.jianshu.com/p/bd24f3202011>
+> **有哪些稳定好用的代码托管服务-知乎**  <https://www.zhihu.com/question/19614403>
+> **Git，Github和Gitlab简介和基本使用**  <https://www.jianshu.com/p/8d497989f704>
+
+# **1、平台汇总**
+
+## **1.1 国外**
+
+**Github** 
+​        开源项目的聚集地，汇集了全球 2100 万程序员，5600 万代码仓库，11 万 7 千个企业。可以创建很多公开仓库，不过私有仓库是收费的，可用于团队代码协作。Markdown 支援很好，[Github Pages](https://pages.github.com/)可以用于构建企业或个人**项目展示及静态网站**，支持自定义域名绑定。Github 的页面设计很不错，相比其他几个平台更有设计感，而且经常在更新设计。[Github Job](https://jobs.github.com/) 可以方便找工作。Github 有一个很实用的东西：[gist](https://gist.github.com/) ，用来跟别人分享代码片段时很好用。网址：<https://github.com/>
+
+**Gitlab**
+​        比较适合企业使用，即内部搭建Gitlab；个人项目用 Gitlab 也很好，能够创建免费的私有仓库。目前 Gitlab + Docker + Jenkins 协同运作，配合起来风生水起。网址：<https://gitlab.com>
+
+**Bitbucket**
+​        同时支持 Git 和 Mercurial 这两个版本控制软件。免费的私有仓库，支持5人以内的合作开发。网址：<https://bitbucket.org/>
+
+## **1.2 国内**
+
+**码云**
+​        国内最大的开源社区 OSChina 的代码托管平台。提供团队协作开发。可创建 1000 个项目，不限私有或公有，自定义域名绑定个人收费。网址：<https://gitee.com/>
+
+**Coding(码市)**
+​        Coding (码市)是国内首个一站式云端软件服务平台，被腾讯收购，与[腾讯云开发者平台](https://dev.tencent.com/)互联。云端软件开发协作平台，目前已累积 30 万开发者，50 万个项目，自定义域名绑定免费。网址：<https://coding.net/>
+
+**百度效率云**
+​	百度的代码托管平台。依托于百度这样的巨头，优势明显。代码托管，版本管理，持续集成，交付，敏捷项目管理。网址：<http://xiaolvyun.baidu.com/>
+
+**阿里云 Code**
+​	阿里云 Code 可以让你免费托管代码，只需要免费注册一个 阿里云 的帐号即可。可以参考这篇文章：[http://www.jianshu.com/p/5fba024041e6](https://www.jianshu.com/p/5fba024041e6)网址：<https://code.aliyun.com/>
+
+# **2、**[**软件使用**](https://gitee.com/all-about-git)
+
+**Git**：下载及使用如下（推荐），**重点推荐** <https://gitee.com/all-about-git> ，包含**Git GUI 客户端、Git IDE 插件、Git 浏览器插件、搭建 Git 服务、Git 教程、Git 常用命令**
+
+> 下载 <https://git-scm.com/downloads>
+> 使用 <http://www.runoob.com/git/git-install-setup.html>
+
+**GitHub Desktop**：Github自己的桌面版客户端，含Windows和Mac版本，不需要写git命令，直接鼠标点
+
+> 下载 <https://desktop.github.com/>
+> 使用 <https://www.jianshu.com/p/1e45b93bd593>
+
+**Mercurial**：下载及使用如下（不常用）
+
+> <https://blog.csdn.net/moonspiritacm/article/details/80863421>
+> <https://zh-hginit.readthedocs.io/en/latest/groundup/>
+> <https://blog.csdn.net/lanxuezaipiao/article/details/16971275>
+
+# **3、 Git 常用命令**
+
+### 仓库
+```markdown
+# 在当前目录新建一个Git代码库
+$ git init
+# 新建一个目录，将其初始化为Git代码库
+$ git init [project-name]
+# 下载一个项目和它的整个代码历史
+$ git clone [url]
+```
+### 配置
+```markdown
+# 显示当前的Git配置
+$ git config --list
+# 编辑Git配置文件
+$ git config -e [--global]
+# 设置提交代码时的用户信息
+$ git config [--global] user.name "[name]"
+$ git config [--global] user.email "[email address]"
+```
+### 增加/删除文件
+```markdown
+# 添加指定文件到暂存区
+$ git add [file1] [file2] ...
+# 添加指定目录到暂存区，包括子目录
+$ git add [dir]
+# 添加当前目录的所有文件到暂存区
+$ git add .
+# 添加每个变化前，都会要求确认
+# 对于同一个文件的多处变化，可以实现分次提交
+$ git add -p
+# 删除工作区文件，并且将这次删除放入暂存区
+$ git rm [file1] [file2] ...
+# 停止追踪指定文件，但该文件会保留在工作区
+$ git rm --cached [file]
+# 改名文件，并且将这个改名放入暂存区
+$ git mv [file-original] [file-renamed]
+```
+### 代码提交
+```markdown
+# 提交暂存区到仓库区
+$ git commit -m [message]
+# 提交暂存区的指定文件到仓库区
+$ git commit [file1] [file2] ... -m [message]
+# 提交工作区自上次commit之后的变化，直接到仓库区
+$ git commit -a
+# 提交时显示所有diff信息
+$ git commit -v
+# 使用一次新的commit，替代上一次提交
+# 如果代码没有任何新变化，则用来改写上一次commit的提交信息
+$ git commit --amend -m [message]
+# 重做上一次commit，并包括指定文件的新变化
+$ git commit --amend [file1] [file2] ...
+```
+### 分支
+
+```markdown
+# 列出所有本地分支
+$ git branch
+# 列出所有远程分支
+$ git branch -r
+# 列出所有本地分支和远程分支
+$ git branch -a
+# 新建一个分支，但依然停留在当前分支
+$ git branch [branch-name]
+# 新建一个分支，并切换到该分支
+$ git checkout -b [branch]
+# 新建一个分支，指向指定commit
+$ git branch [branch] [commit]
+# 新建一个分支，与指定的远程分支建立追踪关系
+$ git branch --track [branch] [remote-branch]
+# 切换到指定分支，并更新工作区
+$ git checkout [branch-name]
+# 切换到上一个分支
+$ git checkout -
+# 建立追踪关系，在现有分支与指定的远程分支之间
+$ git branch --set-upstream [branch] [remote-branch]
+# 合并指定分支到当前分支
+$ git merge [branch]
+# 选择一个commit，合并进当前分支
+$ git cherry-pick [commit]
+# 删除分支
+$ git branch -d [branch-name]
+# 删除远程分支
+$ git push origin --delete [branch-name]
+$ git branch -dr [remote/branch]
+```
+### 标签
+```markdown
+# 列出所有tag
+$ git tag
+# 新建一个tag在当前commit
+$ git tag [tag]
+# 新建一个tag在指定commit
+$ git tag [tag] [commit]
+# 删除本地tag
+$ git tag -d [tag]
+# 删除远程tag
+$ git push origin :refs/tags/[tagName]
+# 查看tag信息
+$ git show [tag]
+# 提交指定tag
+$ git push [remote] [tag]
+# 提交所有tag
+$ git push [remote] --tags
+# 新建一个分支，指向某个tag
+$ git checkout -b [branch] [tag]
+```
+### 查看信息
+```markdown
+# 显示有变更的文件
+$ git status
+# 显示当前分支的版本历史
+$ git log
+# 显示commit历史，以及每次commit发生变更的文件
+$ git log --stat
+# 搜索提交历史，根据关键词
+$ git log -S [keyword]
+# 显示某个commit之后的所有变动，每个commit占据一行
+$ git log [tag] HEAD --pretty=format:%s
+# 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件
+$ git log [tag] HEAD --grep feature
+# 显示某个文件的版本历史，包括文件改名
+$ git log --follow [file]
+$ git whatchanged [file]
+# 显示指定文件相关的每一次diff
+$ git log -p [file]
+# 显示过去5次提交
+$ git log -5 --pretty --oneline
+# 显示所有提交过的用户，按提交次数排序
+$ git shortlog -sn
+# 显示指定文件是什么人在什么时间修改过
+$ git blame [file]
+# 显示暂存区和工作区的差异
+$ git diff
+# 显示暂存区和上一个commit的差异
+$ git diff --cached [file]
+# 显示工作区与当前分支最新commit之间的差异
+$ git diff HEAD
+# 显示两次提交之间的差异
+$ git diff [first-branch]...[second-branch]
+# 显示今天你写了多少行代码
+$ git diff --shortstat "@{0 day ago}"
+# 显示某次提交的元数据和内容变化
+$ git show [commit]
+# 显示某次提交发生变化的文件
+$ git show --name-only [commit]
+# 显示某次提交时，某个文件的内容
+$ git show [commit]:[filename]
+# 显示当前分支的最近几次提交
+$ git reflog
+```
+### 远程同步
+```markdown
+# 下载远程仓库的所有变动
+$ git fetch [remote]
+# 显示所有远程仓库
+$ git remote -v
+# 显示某个远程仓库的信息
+$ git remote show [remote]
+# 增加一个新的远程仓库，并命名
+$ git remote add [shortname] [url]
+# 取回远程仓库的变化，并与本地分支合并
+$ git pull [remote] [branch]
+# 上传本地指定分支到远程仓库
+$ git push [remote] [branch]
+# 强行推送当前分支到远程仓库，即使有冲突
+$ git push [remote] --force
+# 推送所有分支到远程仓库
+$ git push [remote] --all
+```
+### 撤销
+```markdown
+# 恢复暂存区的指定文件到工作区
+$ git checkout [file]
+# 恢复某个commit的指定文件到暂存区和工作区
+$ git checkout [commit] [file]
+# 恢复暂存区的所有文件到工作区
+$ git checkout .
+# 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
+$ git reset [file]
+# 重置暂存区与工作区，与上一次commit保持一致
+$ git reset --hard
+# 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变
+$ git reset [commit]
+# 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
+$ git reset --hard [commit]
+# 重置当前HEAD为指定commit，但保持暂存区和工作区不变
+$ git reset --keep [commit]
+# 新建一个commit，用来撤销指定commit
+# 后者的所有变化都将被前者抵消，并且应用到当前分支
+$ git revert [commit]
+# 暂时将未提交的变化移除，稍后再移入
+$ git stash
+$ git stash pop
+```
+### 其他
+```markdown
+# 生成一个可供发布的压缩包
+$ git archive
+```
+
+# **4、 使用建议**
+
+​        对于程序员来说，**会使用代码托管平台**以及版本控制软件，是非常必要的技能。尤其是像 Github 这样可以作为程序员简历的一部分的「极客社交平台」。多参与优秀开源项目的 Bug 修改、功能添加；自己也可以发布自己的代码仓库，并做好维护，让别人来参与。这是打开业界知名度的好方法。
+
+​        使用代码托管平台可以锻炼我们使用**版本控制软件**（如 Git，Mercurial，等等）的能力。对于企业来说，使用一个代码托管平台背后的软件非常重要。当今这个时代，如果一个IT企业内部没有代码控制，那简直不可想象。个人比较推荐 Gitlab。
+
+​        做好个人的**本地备份**也很要紧。虽然目前在线代码托管平台很多，但作为程序员最好有危机意识。至少买一块移动硬盘吧，把自己写的重要的代码定期备份起来。
