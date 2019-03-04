@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      代码托管平台
+title:      代码托管平台使用
 subtitle:   Github、Git
 date:       2019-03-04
 author:     Ysai
@@ -13,7 +13,7 @@ tags:
 
 
 
-# **代码托管平台（Github、Git）**
+# **代码托管平台使用（Github、Git）**
 
 > **国内外代码托管平台汇总-简书**  <https://www.jianshu.com/p/bd24f3202011>
 > 

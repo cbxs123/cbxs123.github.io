@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      云平台使用记录
+title:      云平台使用
 subtitle:   青云、阿里云、Vutrl
 date:       2019-03-03
 author:     Ysai
@@ -11,52 +11,33 @@ tags:
     - 云平台
 ---
 
-
-
-# **云平台使用记录（青云、阿里云、Vutrl）**
+# **云平台使用（青云、阿里云、Vutrl）**
 
 ## **1、简介**
 
 ### **1.1 国内云主机**
-
 &ensp;&ensp;&ensp;&ensp;阿里云适合不考虑预算、考虑性能稳定的；腾讯云适合考虑预算和稳定的；青云适合考虑私有云、操作界面简洁的；百度云适合考虑SEO优化的，不推荐。
-
 青云、阿里、腾讯，这三家详细比较（云主机、云监控、云数据库、云CDN、云存储），[参考](https://www.zhihu.com/question/26290516)：
-
 1、**性价比（单价、优惠）**由高到低：腾讯、阿里、青云；
-
 2、**服务器稳定性（网站）**由高到低：阿里、腾讯、青云；
-
 3、**产品打包**方面，青云的主机、路由、公网IP、硬盘，都是需要**独立购买**的，适合灵活**部署多种云产品**的(共用同一路由、公网)；腾讯云和阿里云是一体的，随用随开；
-
 4、**服务类产品方面**，阿里云偏商务应用，腾讯云偏社交应用，青云多数服务产品从别的公司集成的(**种类多样**)；
-
 5、**深度学习GPU，短期使用**阿里、腾讯、青云；**长期使用**推荐自建服务器；
-
 6、**控制面板体验（操作简易型）**由高到低，青云、阿里、腾讯；
-
 7、**监控预警**由高到低：青云、阿里、腾讯；
 
 ### **1.2 国外云主机**
-
  &ensp;&ensp;&ensp;国外云主机常称为VPS，主要用于[科学上网](https://ysai.work/2019/03/02/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/)（翻墙）及[搭建网站](https://www.seoimo.com/wordpress-vps/#why-wordpress)（免备案审查），从性价比来看有[Vultr](https://www.vultr.com/)、[搬瓦工](https://bandwagonhost.com/)、[Virmach](https://virmach.com/)等。
-
 > **国外VPS推荐** <http://www.laozuo.org/myvps>
 >
 > **便宜VPS** <https://www.zhujiceping.com/35106.html>
 
 ## **2、使用**
-
 ### **2.1** [**青云**](https://www.qingcloud.com/)
-
 1、**登录**<https://console.qingcloud.com/login> ，输入用户名、密码，登陆后左上角选择区域 
-
 2、**密码**
-
 第一次新建系统：用户名 ubuntu / 默认密码 p12cHANgepwD
-
 已经建好的系统：建议更改默认密码-**所有平台创建系统后初次登录需修改用户(ubuntu)密码及root密码**
-
 ```
 sudo –i 
 输入原密码 
@@ -65,9 +46,7 @@ ubuntu用户的新密码
 passwd root 
 root用户的新密码 
 ```
-
 3、**主要平台介绍**(核数、内存、个数皆可调)
-
 ```
 计算->主机：Ubuntu系统，配置Python、可选单机Spark+Hadoop； 
 网络与CDN->VPC网络：可看做路由器，通过设置端口转发（TCP+22）+对应主机IP（如192.168.0.2）完成文件传输； 
@@ -76,9 +55,7 @@ APPCenter->浏览：从应用分类中选择合适的云应用，大部分是免
 大数据平台->QingMR: 客户端节点Ubuntu系统，配置集群Spark+Hadoop，包含大数据分析组件Hadoop、Spark等； 
 人工智能->Deep Learning: Ubuntu系统，配置NVIDIA Tesla P100 GPU、CUDA 8 + cuDNN 5、深度学习框架TensorFlow，Caffe，PyTorch， Keras； 
 ```
-
 4、**文件传输**
-
 ```
 申请公网IP（带宽1M-20M可调），绑定到VPC网络或主机 
 VPC网络->管理配置->端口转发：双击内网IP，修改为要传输的服务器IP；源端口和内网端口均为TCP+22 
@@ -88,29 +65,17 @@ Ubuntu直接打开一个终端，使用ssh命令远程登录，如ssh ubuntu@公
 方法1：（推荐） 
 使用finalshell软件在Windows、Linux、Mac上实现终端登录+图形化文件操作，注新建ssh时不选海外加速，参考 https://ysai.work/2019/01/02/远程登录/
 ```
-
 5、**使用备注**
-
 (1)：启动服务器后，点Web终端(蓝色小窗口)后进入ubuntu服务器版黑色界面，输入用户名及密码，即可进行操作；
-
 (2)：长时间未进行操作会黑屏，按Enter键或关闭界面重开；
-
 (3):   Web控制台在黑屏状态下不可用于运行程序的截图功能，可以在服务器中保留中间运行结果，而后在本地截取最终结果；
-
 (4)：如果不是运行验证时间或效率的程序，可以按Ctrl+Alt-F1~F6，支持多个用户登录及多个程序独立运行；
-
 (5)：初次配置及使用看[用户指南](https://docs.qingcloud.com/product/quick_start/quick_start)，遇到问题发工单找客服；
-
-(6)：GPU平台的用户文件目录在/data下面，创建系统后的初次使用需更改/data文件夹读写权限     
-
+(6)：GPU平台的用户文件目录在/data下面，创建系统后的初次使用需更改/data文件夹读写权限   
 ```
 sudo chmod –R 777 /data 
 ```
-
 ### **2.2** [**阿里云**](https://www.aliyun.com/)
-
 > 参考**阿里云入门指南** <https://www.alibabacloud.com/zh/getting-started>
-
 ### **2.3** [**Vultr**](https://www.vultr.com)
-
 > 参考**Vultr 教程-知乎** <https://zhuanlan.zhihu.com/p/34111789>
