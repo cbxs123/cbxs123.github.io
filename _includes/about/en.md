@@ -28,9 +28,9 @@
 >
 > **14-移动开发：**Android；iOS；React native；WEEX
 >
-> **15-[云计算&大数据](https://ysai.work/tags/#云计算&大数据)：**[云平台](https://ysai.work/tags/#云平台)；Docker；大数据基础；Hadoop；Spark；HDFS；HBase；Hive；Pig；Kafka；Mahout；Storm；Zookeeper；Sqoop；Flume
+> **15-[云计算&大数据](https://ysai.work/tags/?tag=云计算&大数据)：**[云平台](https://ysai.work/tags/?tag=云平台)；Docker；大数据基础；Hadoop；Spark；HDFS；HBase；Hive；Pig；Kafka；Mahout；Storm；Zookeeper；Sqoop；Flume
 >
-> **16-[运维&测试](https://ysai.work/tags/?tag=%E8%BF%90%E7%BB%B4%26%E6%B5%8B%E8%AF%95)：**[Linux](https://ysai.work/tags/?tag=Linux)；[Shell](https://ysai.work/tags/?tag=shell)；[网络](https://ysai.work/tags/#网络)；Nginx；Ansible；Git；功能测试；性能测试；自动测试；接口测试；安全测试
+> **16-[运维&测试](https://ysai.work/tags/?tag=%E8%BF%90%E7%BB%B4%26%E6%B5%8B%E8%AF%95)：**[Linux](https://ysai.work/tags/?tag=Linux)；[Shell](https://ysai.work/tags/?tag=shell)；[网络](https://ysai.work/tags/?tag=网络)；Nginx；Ansible；Git；功能测试；性能测试；自动测试；接口测试；安全测试
 >
 > **17-信息安全：**Web开发；安全开发；网络安全；Kali；加密解密；系统安全；渗透测试；信息隐藏
 >
