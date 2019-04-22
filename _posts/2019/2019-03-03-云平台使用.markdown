@@ -34,7 +34,7 @@ categories: 云平台
 > **便宜VPS** <https://www.zhujiceping.com/35106.html>
 
 ## 2、使用
-### 2.1 [**青云**](https://www.qingcloud.com/)
+### 2.1 [青云](https://www.qingcloud.com/)
 1、**登录**<https://console.qingcloud.com/login> ，输入用户名、密码，登陆后左上角选择区域 
 
 2、**密码**
@@ -84,8 +84,8 @@ Ubuntu直接打开一个终端，使用ssh命令远程登录，如ssh ubuntu@公
 ```
 sudo chmod –R 777 /data 
 ```
-### 2.2 [**阿里云**](https://www.aliyun.com/)
+### 2.2 [阿里云](https://www.aliyun.com/)
 > 参考**阿里云入门指南** <https://www.alibabacloud.com/zh/getting-started>
 
-### 2.3 [**Vultr**](https://www.vultr.com)
+### 2.3 [Vultr](https://www.vultr.com)
 > 参考**Vultr 教程-知乎** <https://zhuanlan.zhihu.com/p/34111789>

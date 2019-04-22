@@ -4,9 +4,7 @@ title:      代码托管平台使用
 categories: Github
 ---
 
-
-
- **代码托管平台使用（Github、Git）**
+# 代码托管平台使用（Github、Git）
 
 > **国内外代码托管平台汇总-简书**  <https://www.jianshu.com/p/bd24f3202011>
 > 
@@ -41,7 +39,7 @@ categories: Github
 **阿里云 Code**
 ​	阿里云 Code 可以让你免费托管代码，只需要免费注册一个 阿里云 的帐号即可。可以参考这篇文章：[http://www.jianshu.com/p/5fba024041e6](https://www.jianshu.com/p/5fba024041e6)网址：<https://code.aliyun.com/>
 
-## 2、[**软件使用**](https://gitee.com/all-about-git)
+## 2、[软件使用](https://gitee.com/all-about-git)
 
 **Git**：下载及使用如下（推荐），**重点推荐** <https://gitee.com/all-about-git> ，包含**Git GUI 客户端、Git IDE 插件、Git 浏览器插件、搭建 Git 服务、Git 教程、Git 常用命令**
 > 下载 <https://git-scm.com/downloads>
