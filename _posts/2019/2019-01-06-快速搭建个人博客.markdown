@@ -3,12 +3,7 @@ layout:     post
 title:      快速搭建个人博客
 subtitle:   手把手教你在半小时内搭建自己的个人博客(如果不踩坑的话🙈🙊🙉)
 date:       2019-01-06
-author:     Ysai
-header-img: img/post-bg-re-vs-ng2.jpg
-catalog: true
-tags:
-    - 项目实践
-    - Blog
+categories: Blog
 ---
 
 > 正所谓前人栽树，后人乘凉。

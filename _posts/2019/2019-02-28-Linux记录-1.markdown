@@ -1,25 +1,17 @@
 ---
 layout:     post
 title:      Linux记录-1
-subtitle:   端口、性能、终端、截图
 date:       2019-02-28
-author:     Ysai
-header-img: img/post-bg-linux-1.jpg
-catalog: true
-tags:
-    - 运维&测试
-    - Linux
+categories: Linux
 ---
 
 >Linux常用命令记录-端口、性能、终端、截图
 
-
-
-# **Linux端口操作**
+# Linux端口操作
 
 > https://blog.csdn.net/boonya/article/details/77949438
 
-### **1、 Ubuntu关闭端口**
+### 1、 Ubuntu关闭端口
 
 1、首先进入root : 
 
@@ -59,7 +51,7 @@ kill -9 PID号
 
 ps：kill就是给某个进程id发送了一个信号。默认发送的信号是SIGTERM，而kill -9发送的信号是SIGKILL，即exit。exit信号不会被系统阻塞，所以kill -9能顺利杀掉进程。
 
-### **2、Ubuntu打开端口**
+### 2、Ubuntu打开端口
 
 1、安装iptables
 
@@ -87,7 +79,7 @@ sudo netfilter-persistent save sudo netfilter-persistent reload
 
 
 
-# **Linux服务器性能监测**
+# Linux服务器性能监测
 
 **通过执行以下命令，可以在 1 分钟内对系统资源使用情况有个大致的了解**
 
@@ -113,7 +105,7 @@ df -h    磁盘使用情况
 
 
 
-# **Linux增加虚拟内存**
+# Linux增加虚拟内存
 
 <https://blog.csdn.net/xingjiarong/article/details/49382525>
 
@@ -151,9 +143,9 @@ sudo gedit /etc/fstab
 
 
 
-# **Linux运行程序命令截图**
+# Linux运行程序命令截图
 
-### **1、桌面版-scrot**
+### 1、桌面版-scrot
 
 > <https://linux.cn/article-3197-1.html>
 
@@ -175,7 +167,7 @@ python调用：
 import os dir='/home/ys/' os.system('scrot -u %stemp.png'%dir) 
 ```
 
-### **2、服务器版-fbgrab**
+### 2、服务器版-fbgrab
 
 > <https://askubuntu.com/questions/194427/what-is-the-terminal-command-to-take-a-screenshot>
 >

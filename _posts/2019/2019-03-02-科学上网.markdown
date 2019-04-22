@@ -1,9 +1,8 @@
 ---
 layout:     post
 title:      科学上网汇总
-categories:
-    - 运维&测试
-    - 网络
+date:       2019-03-02
+categories: 网络
 ---
 
 >**科学上网指南-VPN、ssr、v2ray**

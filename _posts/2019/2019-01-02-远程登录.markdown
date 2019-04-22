@@ -3,12 +3,7 @@ layout:     post
 title:      远程登录(桌面控制)软件
 subtitle:   SSH、FTP协议
 date:       2019-01-02
-author:     Ysai
-header-img: img/post-bg-ssh.jpg
-catalog: true
-tags:
-    - 运维&测试
-    - Linux
+categories: Linux
 ---
 
 >随便整理的SSH、FTP远程登录(桌面控制)软件
@@ -23,7 +18,7 @@ tags:
 
 ### 1.2 Windows--->Ubuntu（虚拟机或服务器）
 
-##### 推荐软件1：**FinalShell**
+##### 推荐软件1：FinalShell
 
 特点：
 
@@ -42,7 +37,7 @@ ssh和远程桌面均支持代理服务器；
 管理员安装即可 
 ```
 
-##### 推荐软件2：**MobaXterm**
+##### 推荐软件2：MobaXterm
 
 特点：
 
@@ -68,7 +63,7 @@ MobaXterm链接：https://mobaxterm.mobatek.net/download-home-edition.html
 
 ![](https://ws1.sinaimg.cn/mw690/e669e01fgy1g0ac44t4j3j20ha0lnta0.jpg)
 
-##### 推荐软件3：**Xshell+WinSCP**
+##### 推荐软件3：Xshell+WinSCP
 
 特点：
 
@@ -89,7 +84,7 @@ WinSCP下载：https://winscp.net/eng/download.php
 
 ### 1.2 Ubuntu（本地）--->Ubuntu（服务器）
 
-##### 推荐软件1：**FinalShell**
+##### 推荐软件1：FinalShell
 
 特点：
 
@@ -112,7 +107,7 @@ chmod +x finalshell_install.sh
 sudo ./finalshell_install.sh 
 ```
 
-##### 推荐软件2：**系统终端+FileZilla**
+##### 推荐软件2：系统终端+FileZilla
 
 特点：
 
@@ -169,7 +164,7 @@ tar -zxvf FileName.tar.gz               # 解压
 
 # 2、远程桌面控制
 
-##### 推荐软件1：**TeamViewer**
+##### 推荐软件1：TeamViewer
 
 特点：
 
@@ -189,7 +184,7 @@ sudo dpkg -i teamviewer_14.1.3399_amd64.deb
 
 
 
-##### 推荐软件2：**FinalShell**
+##### 推荐软件2：FinalShell
 
 特点：
 
