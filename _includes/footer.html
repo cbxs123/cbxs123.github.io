@@ -23,19 +23,17 @@
                         src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_username }}.github.io&type=star&count=true" >
                     </iframe>
 					<br>
-				<ul class="site-footer-links mobile-hidden">
                 {% for nav in site.navs %}
                 <li>
                     <a href="{{ site.url }}{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
                 </li>
                 {% endfor %}
                 <li><a href="{{ site.url }}{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;"></span></a></li>
-            </ul>
                 </p>				
             </div>
             <ul class="site-footer-links right mobile-hidden">
                 <li>
-                    <a href="javascript:window.scrollTo(0,0)" ></a>
+                    <a href="javascript:window.scrollTo(0,0)" >Top</a>
                 </li>
             </ul>
     </footer>
