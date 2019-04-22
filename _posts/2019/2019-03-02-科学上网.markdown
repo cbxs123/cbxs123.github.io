@@ -2,7 +2,7 @@
 layout:     post
 title:      科学上网汇总
 date:       2019-03-02
-categories: 网络
+categories: Google
 ---
 
 >**科学上网指南-VPN、ssr、v2ray**
