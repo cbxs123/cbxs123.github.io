@@ -1,21 +1,14 @@
 ---
 layout:     post
 title:      云平台使用
-subtitle:   青云、阿里云、Vutrl
-date:       2019-03-03
-author:     Ysai
-header-img: img/post-bg-linux.jpg
-catalog: true
-tags:
-    - 云计算&大数据
-    - 云平台
+categories: 云平台
 ---
 
-# **云平台使用（青云、阿里云、Vutrl）**
+# 云平台使用（青云、阿里云、Vutrl）
 
-## **1、简介**
+## 1、简介
 
-### **1.1 国内云主机**
+### 1.1 国内云主机
 &ensp;&ensp;&ensp;&ensp;阿里云适合不考虑预算、考虑性能稳定的；腾讯云适合考虑预算和稳定的；青云适合考虑私有云、操作界面简洁的；百度云适合考虑SEO优化的，不推荐。
 
 青云、阿里、腾讯，这三家详细比较（云主机、云监控、云数据库、云CDN、云存储），[参考](https://www.zhihu.com/question/26290516)：
@@ -34,14 +27,14 @@ tags:
 
 7、**监控预警**由高到低：青云、阿里、腾讯；
 
-### **1.2 国外云主机**
+### 1.2 国外云主机
  &ensp;&ensp;&ensp;国外云主机常称为VPS，主要用于[科学上网](https://ysai.work/2019/03/02/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/)（翻墙）及[搭建网站](https://www.seoimo.com/wordpress-vps/#why-wordpress)（免备案审查），从性价比来看有[Vultr](https://www.vultr.com/)、[搬瓦工](https://bandwagonhost.com/)、[Virmach](https://virmach.com/)等。
 > **国外VPS推荐** <http://www.laozuo.org/myvps>
 >
 > **便宜VPS** <https://www.zhujiceping.com/35106.html>
 
-## **2、使用**
-### **2.1** [**青云**](https://www.qingcloud.com/)
+## 2、使用
+### 2.1 [**青云**](https://www.qingcloud.com/)
 1、**登录**<https://console.qingcloud.com/login> ，输入用户名、密码，登陆后左上角选择区域 
 
 2、**密码**
@@ -91,8 +84,8 @@ Ubuntu直接打开一个终端，使用ssh命令远程登录，如ssh ubuntu@公
 ```
 sudo chmod –R 777 /data 
 ```
-### **2.2** [**阿里云**](https://www.aliyun.com/)
+### 2.2 [**阿里云**](https://www.aliyun.com/)
 > 参考**阿里云入门指南** <https://www.alibabacloud.com/zh/getting-started>
 
-### **2.3** [**Vultr**](https://www.vultr.com)
+### 2.3 [**Vultr**](https://www.vultr.com)
 > 参考**Vultr 教程-知乎** <https://zhuanlan.zhihu.com/p/34111789>
