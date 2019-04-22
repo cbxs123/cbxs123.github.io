@@ -620,7 +620,7 @@ Configuration file: /Users/baiying/Blog/_config.yml
 
 因为最近发现 Fork 将近破百，加上直接 Clone 仓库的，保守估计已经帮助上百人成功的搭建了自己的博客，~~可是 Star 却仅仅只有 **12**！可能还是做的不够好吧！~~现在已经破百了，感谢大家的Star！
 
-### **别无他求，点个 [Star](https://github.com/qiubaiying/qiubaiying.github.io) 吧**！
+### 别无他求，点个 [Star](https://github.com/qiubaiying/qiubaiying.github.io) 吧！
 
 ![](http://upload-images.jianshu.io/upload_images/2178672-768a38ee9fb0df28.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -628,7 +628,7 @@ Configuration file: /Users/baiying/Blog/_config.yml
 
 # 补充
 
-### 修改网站的 **icon**
+### 修改网站的 icon
 
 ![](https://ws2.sinaimg.cn/large/006tNc79gy1flgh6k23ppj30ad00uq2t.jpg)
 
@@ -737,7 +737,7 @@ Mac 上的图床神器：iPic
 </p>
 ```
 
-####  **改进后的简化代码如下：:smile:**
+####  改进后的简化代码如下：:smile:
 
 ```html
     <!-- 网站计数器 -->
