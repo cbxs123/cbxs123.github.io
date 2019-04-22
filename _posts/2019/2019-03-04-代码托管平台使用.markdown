@@ -6,7 +6,7 @@ categories: Github
 
 
 
-**代码托管平台使用（Github、Git）**
+ **代码托管平台使用（Github、Git）**
 
 > **国内外代码托管平台汇总-简书**  <https://www.jianshu.com/p/bd24f3202011>
 > 
@@ -14,9 +14,9 @@ categories: Github
 > 
 > **Git，Github和Gitlab简介和基本使用**  <https://www.jianshu.com/p/8d497989f704>
 
-## **1、平台汇总**
+## 1、平台汇总
 
-### **1.1 国外**
+### 1.1 国外
 
 **Github** 
 ​        开源项目的聚集地，汇集了全球 2100 万程序员，5600 万代码仓库，11 万 7 千个企业。可以创建很多公开仓库，不过私有仓库是收费的，可用于团队代码协作。Markdown 支援很好，[Github Pages](https://pages.github.com/)可以用于构建企业或个人**项目展示及静态网站**，支持自定义域名绑定。Github 的页面设计很不错，相比其他几个平台更有设计感，而且经常在更新设计。[Github Job](https://jobs.github.com/) 可以方便找工作。Github 有一个很实用的东西：[gist](https://gist.github.com/) ，用来跟别人分享代码片段时很好用。网址：<https://github.com/>
@@ -27,7 +27,7 @@ categories: Github
 **Bitbucket**
 ​        同时支持 Git 和 Mercurial 这两个版本控制软件。免费的私有仓库，支持5人以内的合作开发。网址：<https://bitbucket.org/>
 
-### **1.2 国内**
+### 1.2 国内
 
 **码云**
 ​        国内最大的开源社区 OSChina 的代码托管平台。提供团队协作开发。可创建 1000 个项目，不限私有或公有，自定义域名绑定个人收费。网址：<https://gitee.com/>
@@ -41,7 +41,7 @@ categories: Github
 **阿里云 Code**
 ​	阿里云 Code 可以让你免费托管代码，只需要免费注册一个 阿里云 的帐号即可。可以参考这篇文章：[http://www.jianshu.com/p/5fba024041e6](https://www.jianshu.com/p/5fba024041e6)网址：<https://code.aliyun.com/>
 
-## **2、**[**软件使用**](https://gitee.com/all-about-git)
+## 2、[**软件使用**](https://gitee.com/all-about-git)
 
 **Git**：下载及使用如下（推荐），**重点推荐** <https://gitee.com/all-about-git> ，包含**Git GUI 客户端、Git IDE 插件、Git 浏览器插件、搭建 Git 服务、Git 教程、Git 常用命令**
 > 下载 <https://git-scm.com/downloads>
@@ -60,9 +60,9 @@ categories: Github
 > 
 > <https://blog.csdn.net/lanxuezaipiao/article/details/16971275>
 
-## **3、Git 常用命令**
+## 3、Git 常用命令
 
-##### 仓库
+#### 仓库
 ```markdown
 # 在当前目录新建一个Git代码库
 $ git init
@@ -71,7 +71,7 @@ $ git init [project-name]
 # 下载一个项目和它的整个代码历史
 $ git clone [url]
 ```
-##### 配置
+#### 配置
 ```markdown
 # 显示当前的Git配置
 $ git config --list
@@ -81,7 +81,7 @@ $ git config -e [--global]
 $ git config [--global] user.name "[name]"
 $ git config [--global] user.email "[email address]"
 ```
-##### 增加/删除文件
+#### 增加/删除文件
 ```markdown
 # 添加指定文件到暂存区
 $ git add [file1] [file2] ...
@@ -99,7 +99,7 @@ $ git rm --cached [file]
 # 改名文件，并且将这个改名放入暂存区
 $ git mv [file-original] [file-renamed]
 ```
-##### 代码提交
+#### 代码提交
 ```markdown
 # 提交暂存区到仓库区
 $ git commit -m [message]
@@ -115,7 +115,7 @@ $ git commit --amend -m [message]
 # 重做上一次commit，并包括指定文件的新变化
 $ git commit --amend [file1] [file2] ...
 ```
-##### 分支
+#### 分支
 ```markdown
 # 列出所有本地分支
 $ git branch
@@ -147,7 +147,7 @@ $ git branch -d [branch-name]
 $ git push origin --delete [branch-name]
 $ git branch -dr [remote/branch]
 ```
-##### 标签
+#### 标签
 ```markdown
 # 列出所有tag
 $ git tag
@@ -168,7 +168,7 @@ $ git push [remote] --tags
 # 新建一个分支，指向某个tag
 $ git checkout -b [branch] [tag]
 ```
-##### 查看信息
+#### 查看信息
 ```markdown
 # 显示有变更的文件
 $ git status
@@ -212,7 +212,7 @@ $ git show [commit]:[filename]
 # 显示当前分支的最近几次提交
 $ git reflog
 ```
-##### 远程同步
+#### 远程同步
 ```markdown
 # 下载远程仓库的所有变动
 $ git fetch [remote]
@@ -231,7 +231,7 @@ $ git push [remote] --force
 # 推送所有分支到远程仓库
 $ git push [remote] --all
 ```
-##### 撤销
+#### 撤销
 ```markdown
 # 恢复暂存区的指定文件到工作区
 $ git checkout [file]
@@ -256,13 +256,13 @@ $ git revert [commit]
 $ git stash
 $ git stash pop
 ```
-##### 其他
+#### 其他
 ```markdown
 # 生成一个可供发布的压缩包
 $ git archive
 ```
 
-## **4、使用建议**
+## 4、使用建议
 &ensp;&ensp;&ensp;&ensp;对于程序员来说，**会使用代码托管平台**以及版本控制软件，是非常必要的技能。尤其是像 Github 这样可以作为程序员简历的一部分的「极客社交平台」。多参与优秀开源项目的 Bug 修改、功能添加；自己也可以发布自己的代码仓库，并做好维护，让别人来参与。这是打开业界知名度的好方法。
 
 &ensp;&ensp;&ensp;&ensp; 使用代码托管平台可以锻炼我们使用**版本控制软件**（如 Git，Mercurial，等等）的能力。对于企业来说，使用一个代码托管平台背后的软件非常重要。当今这个时代，如果一个IT企业内部没有代码控制，那简直不可想象。个人比较推荐 Gitlab。
