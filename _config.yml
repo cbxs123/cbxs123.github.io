@@ -1,136 +1,128 @@
-# Site settings
-title: Ysai Work
-SEOTitle: 厂白小赛的博客
-header-img: img/post-bg-desk.jpg
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: https://ysai.work
+date_format: "ordinal"
+title: Ysai
+subtitle: "Less is More"
+description: "原赛的个人博客"
+keywords: Ysai, Yuan Sai, cbxs123, cbxs
+favicon: /favicon.ico
+timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 3
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: Ysai
+organization: Cmbnt, Inc.
+organization_url: https://cmbnt.cmbchina.com/
+github_username: cbxs123
+location: Shenzhen,China
 email: 2214754995@qq.com
-description: "Every failure is leading towards success."
-keyword: "Ysai, Ysai Blog, 厂白小赛的博客, cbxs"
-url: "http://cbxs123.github.io"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/cbxs123/cbxs123.github.io" # you code repository
 
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-#sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-YS-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
 
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+  -
+    href: /categories/
+    label: 分类
 
+  -
+    href: /wiki/
+    label: 维基
 
+  -
+    href: /links/
+    label: 链接
+  
+  -
+    href: /about/
+    label: 关于
+  
+  -
+    href: /portfolio/
+    label: 作品
 
-# Publish posts or collection documents with a future date.
-future: true
+    
 
-# SNS settings
-RSS: false
-weibo_username:     750243492
-zhihu_username:     cbxs
-github_username:    cbxs123
-jianshu_username:   bd9e188a435c
-#twitter_username:   saiyuan11
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
 
-
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-# If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN  
-
-
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-# make sure you have this gem installed
-# `$ gem install jekyll-paginate`
-plugins: [jekyll-paginate]
-
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-  syntax_highlighter_opts:
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+    input: GFM
+highlighter: rouge
+paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+plugins:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
 
+repository: cbxs123/cbxs123.github.io
 
-
-# 评论系统
-#Disqus（https://disqus.com/）
-#disqus_username: YS
-
-# Gitalk
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: 
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: cbxs123
+    repo: cbxs123.github.io
+    oauth:
+        client_id: 6f043c6e830e7ffc90bf
+        client_secret: 95521b3cddba56a5f2ba8a20a51554d49448fdd2
+# https://github.com/gitalk/gitalk#install
 gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: 6f043c6e830e7ffc90bf                            #生成的clientID
-  clientSecret: 95521b3cddba56a5f2ba8a20a51554d49448fdd2    #生成的clientSecret
-  repo: cbxs123.github.io    #仓库名称
-  owner: cbxs123    #github用户名
-  admin: cbxs123
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+    owner: cbxs123
+    repo: cbxs123.github.io
+    clientID: 6f043c6e830e7ffc90bf
+    clientSecret: 95521b3cddba56a5f2ba8a20a51554d49448fdd2
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : false
 
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    # 是否支持全文搜索
+    fulltext: false
+    # 最多显示多少条搜索结果
+    limit: 10
 
-# 统计
-
-# Analytics settings
-# Baidu Analytics
-ba_track_id: b4e66aaf344ef2fe6e060ba6fb287128
-
-# Google Analytics
-# ga_track_id: 'UA-132849275-1'            # Format: UA-xxxxxx-xx
-# ga_domain: ysai.work               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
-
-
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-
-
-# MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
-
-
-
-# Friends
-friends: [
-    {
-        title: "Hux",
-        href: "https://github.com/Huxpro"
-    },
-    {
-        title: "saili",
-        href: "http://saili.science/"
-    },
-    {
-        title: "haonanli",
-        href: "https://haonanli.github.io"
-    },{
-        title: "mzlogin",
-        href: "https://mzlogin.github.io/"
-    }
-]
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id:b4e66aaf344ef2fe6e060ba6fb287128

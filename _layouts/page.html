@@ -1,84 +1,41 @@
 ---
 layout: default
 ---
-
-<!-- Page Header -->
-{% include intro-header.html type='page' %}
-
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-        {% if site.sidebar == false %}
-<!-- NO SIDEBAR -->
-    <!-- PostList Container -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
-                {{ content }}
+<section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15}}">
+    <div class="container">
+        <div class="collection-title">
+            <h1 class="collection-header">{{ page.title }}</h1>
+            {% if page.subtitle %}
+                <div class="collection-info">
+                    <span class="meta-info">
+                        {{ page.subtitle}}
+                    </span>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+<!-- / .banner -->
+ <section class="container content">
+        <div class="columns">
+            <div class="column three-fourths" >
+                <article class="article-content markdown-body">
+                    {{ content }}
+                </article>
+				<div class="share">
+                {% include sns-share.html %}
             </div>
-    <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                {% include featured-tags.html %}
-
-                <!-- Friends Blog -->
-                {% include friends.html %}
+			            <div class="comment">
+                {% include comments.html %}
             </div>
-        {% else %}
+            </div>
+            <div class="column one-fourth">
+                {% include sidebar-search.html %}
+                {% include sidebar-qrcode.html %}
+                {% include sidebar-popular-repo.html %}
+            </div>
+        </div>
+					
 
-<!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    		<div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                postlist-container
-            ">
-    			{{ content }}
-    		</div>
-    <!-- Sidebar Container -->
-            <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
-                <!-- Featured Tags -->
-                {% include featured-tags.html %}
-
-                <!-- Short About -->
-                {% include short-about.html %}
-
-                <!-- Friends Blog -->
-                {% include friends.html %}
-    		</div>
-        {% endif %}
-	</div>
-</div>
-
-{% if site.page-mathjax %}
-<!-- Add support for Mathjax by Voleking-->
-<!-- If you want to see formulars well in post preview, Maybe you should add this.-->
-<!-- However, most of the time formulars may not appear in the post preview, you can delete it.-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      equationNumbers: {
-        autoNumber: "AMS"
-      }
-    },
-    tex2jax: {
-      inlineMath: [ ['$','$'] ],
-      displayMath: [ ['$$','$$'] ],
-      processEscapes: true,
-    }
-  });
-</script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-{% endif %}
+    </section>
+    <!-- /section.content -->

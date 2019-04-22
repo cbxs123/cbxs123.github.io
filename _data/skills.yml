@@ -1,0 +1,21 @@
+- name: Data Mining 
+  keywords:
+      - Python
+      - Java
+      - Machine Learning
+      - Deep Learning
+
+- name: Database 
+  keywords:
+      - MySQL
+      - MongoDB
+      - Redis
+      - Hive
+
+- name: Big Data 
+  keywords:
+      - Linux
+      - Spark
+      - Hadoop
+      - Docker
+
