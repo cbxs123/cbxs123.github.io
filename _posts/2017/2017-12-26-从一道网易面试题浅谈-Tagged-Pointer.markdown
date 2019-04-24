@@ -6,9 +6,7 @@ date:       2017-12-26
 author:     BY
 header-img: img/post-bg-universe.jpg
 catalog: true
-tags:
-    - 项目实践
-    - 笔记
+categories: 笔记
 ---
 
 

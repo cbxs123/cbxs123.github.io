@@ -6,9 +6,7 @@ date:       2017-06-19
 author:     BY
 header-img: img/post-bg-universe.jpg
 catalog: true
-tags:
-    - 运维&测试
-    - shell
+categories:  shell
 ---
 
 
@@ -26,7 +24,7 @@ tags:
 	/bin/sh
 	/bin/tcsh
 	/bin/zsh
-	
+
 ## 安装 oh my zsh
 
 	git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
@@ -41,7 +39,7 @@ tags:
 ## 修改主题
 
 	open ~/.zshrc 
-	
+
 修改 `ZSH_THEME=”robbyrussell”`，主题在 ~/.oh-my-zsh/themes 目录下。
 修改为
 
@@ -52,7 +50,7 @@ tags:
 ## 设置为默认shell
 
 	chsh -s /bin/zsh
-	
+
 ## 添加自定义命令
 
 	open ~/.zshrc

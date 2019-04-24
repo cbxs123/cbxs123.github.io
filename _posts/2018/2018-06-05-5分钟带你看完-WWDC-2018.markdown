@@ -6,9 +6,7 @@ date:       2018-06-05
 author:     BY
 header-img: img/post-bg-cook.jpg
 catalog: true
-tags:
-    - 项目实践
-    - 笔记
+categories: 笔记
 ---
 
 ## 前言

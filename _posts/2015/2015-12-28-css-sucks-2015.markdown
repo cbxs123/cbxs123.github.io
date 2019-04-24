@@ -1,5 +1,5 @@
 ---
-layout:     keynote
+layout:     post
 title:      "都 2015 年了，CSS 怎么还是这么糟糕"
 iframe:     "//huangxuan.me/css-sucks-2015/"
 date:       2015-12-28

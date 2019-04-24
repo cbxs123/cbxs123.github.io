@@ -1,14 +1,12 @@
 ---
-layout:     keynote
+layout:     post
 title:      "Service Worker 101「GDG DevFest 2016 北京」"
 subtitle:   "🎞  Slides:Service Worker 101, Working Offline and Instant Loading (GDG DevFest 2016 Beijing)"
 iframe:     "//huangxuan.me/sw-101-gdgdf/"
 navcolor:   "invert"
 date:       2016-11-20
 author:     "Hux"
-tags:
-    - 项目实践
-    - 笔记
+categories: 笔记
 ---
 
 
