@@ -7,6 +7,7 @@ categories: Google
 
 >**科学上网指南-VPN、ssr、v2ray**   
 >**[Ubuntu命令参考](https://github.com/cbxs123/Google-Art)**
+>**[参考GFWdata](https://github.com/wcmbeta/GFWdata)**
 
 # 1、专业付费翻墙软件（VPN）
 
