@@ -8,7 +8,7 @@ title: Ysai
 subtitle: "Less is More"
 description: "原赛的个人博客"
 keywords: Ysai, Yuan Sai, cbxs123, cbxs
-favicon: https://github.githubassets.com/favicon.ico
+favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 3
