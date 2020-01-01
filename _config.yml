@@ -6,8 +6,8 @@ url: https://ysai.work
 date_format: "ordinal"
 title: Ysai
 subtitle: "Less is More"
-description: "原赛的个人博客"
-keywords: Ysai, Yuan Sai, cbxs123, cbxs
+description: "个人博客"
+keywords: Ysai, cbxs123, cbxs
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -21,7 +21,7 @@ organization: CMB, Inc.
 organization_url: 
 github_username: cbxs123
 location: Shenzhen,China
-email: 2214754995@qq.com
+email: 
 
 # ---------------- #
 #    Navigation    #
