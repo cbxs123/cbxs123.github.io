@@ -8,7 +8,7 @@
 
 # Ysai
 
-我的个人博客：<https://dsai.top>，欢迎 Star 和 Fork。
+我的个人博客：<https://cbxs123.com>，欢迎 Star 和 Fork。
 
 ## 概览
 
@@ -24,7 +24,7 @@
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://dsai.top)**
+**[在线预览 &rarr;](https://cbxs123.com)**
 
 ![screenshot home](https://mazhuang.org/assets/images/screenshots/home.png)
 

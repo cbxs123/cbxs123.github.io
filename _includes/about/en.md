@@ -1,4 +1,4 @@
-> **00-[项目实践](https://dsai.top/tags/?tag=%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5)：**
+> **00-[项目实践](https://cbxs123.com/tags/?tag=%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5)：**
 >
 > **01-数学基础：**数学三；概率论与数理统计；统计学；多元&时间序列
 >
@@ -22,15 +22,15 @@
 >
 > **11-区块链：**
 >
-> **12-[前端开发](https://dsai.top/tags/?tag=%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91)：**小程序；[Blog](https://dsai.top/tags/?tag=Blog)；HTML5；[CSS](https://dsai.top/tags/?tag=CSS)；[JavaScript](https://dsai.top/tags/?tag=JavaScript)；Bootstrap；[WebApp](https://dsai.top/tags/?tag=WebApp)；Node.js；React.JS；jQuery；Vue.js；Sass&Less；Angular
+> **12-[前端开发](https://cbxs123.com/tags/?tag=%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91)：**小程序；[Blog](https://cbxs123.com/tags/?tag=Blog)；HTML5；[CSS](https://cbxs123.com/tags/?tag=CSS)；[JavaScript](https://cbxs123.com/tags/?tag=JavaScript)；Bootstrap；[WebApp](https://cbxs123.com/tags/?tag=WebApp)；Node.js；React.JS；jQuery；Vue.js；Sass&Less；Angular
 >
 > **13-后端开发：**Python；Java；SpringBoot；爬虫；PHP；Go；Ruby；Django；Tornado；C；C++；C#
 >
 > **14-移动开发：**Android；iOS；React native；WEEX
 >
-> **15-[云计算&大数据](https://dsai.top/tags/?tag=云计算&大数据)：**[云平台](https://dsai.top/tags/?tag=云平台)；Docker；大数据基础；Hadoop；Spark；HDFS；HBase；Hive；Pig；Kafka；Mahout；Storm；Zookeeper；Sqoop；Flume
+> **15-[云计算&大数据](https://cbxs123.com/tags/?tag=云计算&大数据)：**[云平台](https://cbxs123.com/tags/?tag=云平台)；Docker；大数据基础；Hadoop；Spark；HDFS；HBase；Hive；Pig；Kafka；Mahout；Storm；Zookeeper；Sqoop；Flume
 >
-> **16-[运维&测试](https://dsai.top/tags/?tag=%E8%BF%90%E7%BB%B4%26%E6%B5%8B%E8%AF%95)：**[Linux](https://dsai.top/tags/?tag=Linux)；[Shell](https://dsai.top/tags/?tag=shell)；[网络](https://dsai.top/tags/?tag=网络)；Nginx；Ansible；Git；功能测试；性能测试；自动测试；接口测试；安全测试
+> **16-[运维&测试](https://cbxs123.com/tags/?tag=%E8%BF%90%E7%BB%B4%26%E6%B5%8B%E8%AF%95)：**[Linux](https://cbxs123.com/tags/?tag=Linux)；[Shell](https://cbxs123.com/tags/?tag=shell)；[网络](https://cbxs123.com/tags/?tag=网络)；Nginx；Ansible；Git；功能测试；性能测试；自动测试；接口测试；安全测试
 >
 > **17-信息安全：**Web开发；安全开发；网络安全；Kali；加密解密；系统安全；渗透测试；信息隐藏
 >
@@ -42,7 +42,7 @@
 >
 > **21-阅读：**
 >
-> **22-[笔记](https://dsai.top/tags/?tag=%E7%AC%94%E8%AE%B0)：**
+> **22-[笔记](https://cbxs123.com/tags/?tag=%E7%AC%94%E8%AE%B0)：**
 >
-> **23-工作：**项目；[求职](https://dsai.top/tags/?tag=%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92)
+> **23-工作：**项目；[求职](https://cbxs123.com/tags/?tag=%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92)
 

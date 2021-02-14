@@ -67,7 +67,7 @@ VPC网络->管理配置->端口转发：双击内网IP，修改为要传输的�
 Windows使用xshell软件(终端式)+winscp软件(图形化)； 
 Ubuntu直接打开一个终端，使用ssh命令远程登录，如ssh ubuntu@公网IP；使用scp命令文件传输，如： scp -r /home/ys/aaa ubuntu@公网IP:/home/ubuntu 
 方法1：（推荐） 
-使用finalshell软件在Windows、Linux、Mac上实现终端登录+图形化文件操作，注新建ssh时不选海外加速，参考 https://dsai.top/2019/01/02/远程登录/
+使用finalshell软件在Windows、Linux、Mac上实现终端登录+图形化文件操作，注新建ssh时不选海外加速，参考 https://cbxs123.com/2019/01/02/远程登录/
 ```
 5、**使用备注**
 

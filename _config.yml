@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://dsai.top
+url: https://cbxs123.com
 date_format: "ordinal"
 title: Ysai
 subtitle: "Less is More"
@@ -125,5 +125,5 @@ simple_jekyll_search:
 #    Analytics     #
 # ---------------- #
 google:
-    analytics_id: G-LTJE34SFK9
-    ga_domain: dsai.top
+    analytics_id: UA-189688881-1
+    ga_domain: cbxs123.com
