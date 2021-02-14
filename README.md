@@ -24,7 +24,7 @@
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://ysai.work)**
+**[在线预览 &rarr;](https://dsai.top)**
 
 ![screenshot home](https://mazhuang.org/assets/images/screenshots/home.png)
 

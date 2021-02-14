@@ -2,9 +2,9 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://ysai.work
+url: https://dsai.top
 date_format: "ordinal"
-title: Ysai
+title: 
 subtitle: "Less is More"
 description: "个人博客"
 keywords: Ysai, cbxs123, cbxs
@@ -20,7 +20,7 @@ author: Ysai
 organization: CMB, Inc.
 organization_url: 
 github_username: cbxs123
-location: Shenzhen,China
+location: China
 email: 
 
 # ---------------- #
@@ -125,5 +125,5 @@ simple_jekyll_search:
 #    Analytics     #
 # ---------------- #
 google:
-    analytics_id: UA-138772853-1
-    ga_domain: ysai.work
+    analytics_id: G-LTJE34SFK9
+    ga_domain: dsai.top
