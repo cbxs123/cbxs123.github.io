@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: Ysai
 subtitle: "Less is More"
 description: "个人博客"
-keywords: Ysai, cbxs123, cbxs
+keywords: cbxs123
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -17,7 +17,7 @@ side_bar_repo_limit: 3
 #      Author      #
 # ---------------- #
 author: Ysai
-organization: CMB, Inc.
+organization: 996, Inc.
 organization_url: 
 github_username: cbxs123
 location: China

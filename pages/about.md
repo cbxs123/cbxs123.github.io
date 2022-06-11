@@ -10,20 +10,14 @@ permalink: /about/
 
 <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 简  介 </option>
-    <option value="1"> 目  录 </option>
 </select>
 <div class="zh post-container">
     {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
-<div class="en post-container">
-    {% capture about_en %}{% include about/en.md %}{% endcapture %}
-    {{ about_en | markdownify }}
-</div>
 <script type="text/javascript">
     // get nodes
     var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
     var $select = document.querySelector("select");
 
     // bind hashchange event
